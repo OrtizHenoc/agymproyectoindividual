@@ -1,0 +1,45 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+}
+.container-grid{
+    width: 88.88%;
+    height: 391px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'sugeridos sugeridos'
+                'recientes accesorios'
+                'recientes industriales';
+}
+
+.sugeridos-container{
+    grid-area: sugeridos;
+    background-image: url('/assets/coches-sugeridos.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+.recientes-container{
+    grid-area: recientes;
+    background-image: url('/assets/mas-recientes.png');
+    background-size: cover;
+    background-position: center;
+}
+.accesorios-container{
+    grid-area: accesorios;
+    background-image: url('/assets/accesorios.png');
+    background-size: cover;
+    background-position: center;
+}
+.industriales-container{
+    grid-area: industriales;
+    background-image: url('/assets/vehiculos-industriales.png');
+    background-size: cover;
+    background-position: center;
+}

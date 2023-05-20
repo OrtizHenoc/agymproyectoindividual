@@ -23,39 +23,66 @@ a{
     color: var(--contrast3);
     text-decoration: none;
 }
-.container-grid{
-    width: 88.88%;
-    height: 391px;
-    margin: 0 auto;
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 'sugeridos sugeridos'
-                'recientes accesorios'
-                'recientes industriales';
+ul{
+    list-style-type: none;
+}
+header{
+    width: 100%;
+}
+header nav{
+    width: 36%;
+}
+.logo{
+    width: 138px;
+    height: 43px;
+}
+.menu_bar{
+    display: none;
+}
+header nav ul{
+    overflow: hidden;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    padding: 20px;
+    display: block; 
+}
+header nav ul li a:hover{
+    background: var(--contrast2);
 }
 
-.sugeridos-container{
-    grid-area: sugeridos;
-    background-image: url('/assets/coches-sugeridos.png');
-    background-size: cover;
-    background-position: center;
-    
+@media screen and (max-width:800px ) {
+    header nav {
+        width: 74%;
+        height: 80vh;
+        border: var(--contrast3) solid 1px;
+        background: var(--background);
+        margin: 0;
+        position: fixed;
+    }
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid var(--contrast2);
+    }
+    .menu_bar{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .icon-menuburguer{
+        background-image: url('/assets/bars-solid.svg');
+    }
 }
-.recientes-container{
-    grid-area: recientes;
-    background-image: url('/assets/mas-recientes.png');
-    background-size: cover;
-    background-position: center;
-}
-.accesorios-container{
-    grid-area: accesorios;
-    background-image: url('/assets/accesorios.png');
-    background-size: cover;
-    background-position: center;
-}
-.industriales-container{
-    grid-area: industriales;
-    background-image: url('/assets/vehiculos-industriales.png');
-    background-size: cover;
-    background-position: center;
-}
+
+
+
+
+
+
+
+
+
+
