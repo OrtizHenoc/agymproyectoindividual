@@ -6,6 +6,12 @@
     --contrast2: #8C8C8C;
     --contrast3: #F2F2F2;
     --background:#000000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
 }
 *{
     margin: 0;
@@ -28,6 +34,9 @@ ul{
 }
 header{
     width: 100%;
+}
+nav h4{
+    display: none;
 }
 header nav{
     width: 36%;
@@ -52,28 +61,111 @@ header nav ul li a{
 header nav ul li a:hover{
     background: var(--contrast2);
 }
+.option-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
+}
+.buscador-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.buscador{
+    background-image: url('/assets/magnifying-glass-solid.svg');
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.buscador-input{
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--contrast3);
+    float: left;
+    line-height: 45px;
+    transform: .3s;
+    width: 0;
+}
+/*Buscador responsive*/
+@media screen and (min-width:320px ){
+    .buscador-container:hover > .buscador-input{
+        width: 70px;
+    }
+    .buscador-container:hover > .buscador{
+        display: none;
+    }
+}
+@media screen and (min-width:744px){
+    .buscador-container:hover > .buscador-input{
+        width: 300px;
+    }
+    .buscador-container:hover > .buscador{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:1440px){
+    .buscador-container:hover > .buscador-input{
+        width: 600px;
+    }
+}
 @media screen and (max-width:800px ) {
+    /*Elementos que aparecen*/
     header nav {
         width: 74%;
         height: 80vh;
-        border: var(--contrast3) solid 1px;
+        left: -100%;
         background: var(--background);
         margin: 0;
         position: fixed;
     }
+    .menu_bar{
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    
+    /*Elementos que desaparecen*/
+    .cuenta-text{
+        display: none;
+    }
     header nav ul li {
         display: block;
         float: none;
-        border-bottom: 1px solid var(--contrast2);
+        font-size: var(--psize);
     }
-    .menu_bar{
+    header nav ul li a:hover{
+        background: var(--contrast2);
+    }
+    h4{
+        font-size: var(--h4size);
+    }
+    nav h4{
         display: block;
-        width: 40px;
-        height: 40px;
+        margin: 5px 0 0 20px;
+    }
+    nav ul{
+        margin-top: 5px;
+    }
+    .bt-menu{
+        width: 45px;
+        height: 45px;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
     }
     .icon-menuburguer{
         background-image: url('/assets/bars-solid.svg');
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-size: cover;
     }
 }
 

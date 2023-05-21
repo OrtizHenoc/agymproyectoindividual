@@ -13,10 +13,8 @@
         <a href="index.html">
             <img class="logo" src="assets/Logo.png" alt="Logo Autocare" width="195px">
         </a>
-        <div class="menu_bar">
-            <a href="#" class="bt-menu"><span class="icon-menuburguer"></span></a>
-        </div>
         <nav>
+            <h4>Opciones</h4>
             <ul>
                 <li>
                     <a href="">Administracion de la pagina</a>
@@ -29,17 +27,22 @@
                 </li>
             </ul>
         </nav>
-        <span>
-            <img class="icon" src="/assets/magnifying-glass-solid.svg" alt="lupa icon" width="27px">
-            <input type="text">
-        </span>
-        <span>
-            <img class="icon" src="assets/cart-shopping-solid.svg" alt="carrito" width="28px">
-        </span>
-        <span>
-            <img class="icon" src="assets/user-solid.svg" alt="carrito" width="28px">
-            <p>Cuenta</p>
-        </span>
+        <div class="option-container">
+            <span class="buscador-container">
+                <a href="#" class="buscador icon"><span class="icon-buscador"></span></a>
+                <input type="text" class="buscador-input" placeholder="Buscar">
+            </span>
+            <span>
+                <img class="icon" src="assets/cart-shopping-solid.svg" alt="carrito" width="28px">
+            </span>
+            <span>
+                <img class="icon" src="assets/user-solid.svg" alt="carrito" width="28px">
+                <p class="cuenta-text">Cuenta</p>
+            </span>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="icon-menuburguer icon"></span></a>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container-grid">
@@ -147,5 +150,7 @@
             AutoCare Todos los derechos reservados.
         </p>
     </footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/menu.js"></script>
 </body>
 </html>
