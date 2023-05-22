@@ -6,40 +6,76 @@
     --contrast2: #8C8C8C;
     --contrast3: #F2F2F2;
     --background:#000000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
 }
 .container-grid{
     width: 88.88%;
     height: 391px;
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
     gap: 10px;
     grid-template-areas: 'sugeridos sugeridos'
                 'recientes accesorios'
                 'recientes industriales';
+    grid-column: auto;
 }
-
+.sugeridos-container, .recientes-container, .accesorios-container, .industriales-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.sugeridos-container p, .recientes-container p, .accesorios-container p, .industriales-container p {
+    margin: 5px;
+    z-index: 1;
+}
 .sugeridos-container{
+    position: relative;
     grid-area: sugeridos;
     background-image: url('/assets/coches-sugeridos.png');
     background-size: cover;
     background-position: center;
-    
+    font-size: var(--h3size);
 }
 .recientes-container{
+    position: relative;
     grid-area: recientes;
     background-image: url('/assets/mas-recientes.png');
     background-size: cover;
     background-position: center;
+    font-size: var(--h3size);
 }
 .accesorios-container{
+    position: relative;
     grid-area: accesorios;
     background-image: url('/assets/accesorios.png');
     background-size: cover;
     background-position: center;
+    font-size: var(--h3size);
+    font-size: var(--h3size);
 }
 .industriales-container{
+    position: relative;
     grid-area: industriales;
     background-image: url('/assets/vehiculos-industriales.png');
     background-size: cover;
     background-position: center;
+    font-size: var(--h3size);
 }
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sugeridos-container:hover .overlay, .recientes-container:hover .overlay, .accesorios-container:hover .overlay, .industriales-container:hover .overlay {
+    opacity: 0;
+  }
