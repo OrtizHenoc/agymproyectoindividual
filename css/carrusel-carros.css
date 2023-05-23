@@ -1,0 +1,85 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+    --background-elementc: #191919;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
+}
+.carrusel-container{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    position: relative;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    margin-bottom: 20px;
+}
+.arrow-container{
+    position: sticky;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+.arrow {
+    display: inline-block;
+    bottom: 50%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/arrow-down-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    margin: auto;
+  }
+  
+.carrusel-container::-webkit-scrollbar{
+    display: none;
+}
+.carrusel-element{
+    width: 300px;
+    height: 430px;
+    font-size: var(--psize);
+    margin: 20px;
+    background-color: var(--background-elementc);
+    box-shadow: 0px 4px 10px rgba(217, 161, 59, 0.8);
+}
+.carrusel-container .img-car{
+    width: 300px;
+    height: 200px;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    max-height: 140px;
+    justify-content: space-between;
+    margin: 10px 0 10px 20px;
+}
+.details-container p {
+    margin: 5px;
+}
+.buy-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    margin: 20px auto;
+    height: 36.9px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}

@@ -37,10 +37,15 @@ header{
     display: flex;
     flex-direction: column;
 }
+h2{
+    font-size: var(--h3size);
+    margin: 15px;
+}
 nav h4{
     display: none;
 
 }
+
 header nav{
     width: 36%;
     z-index: 3;
@@ -235,8 +240,8 @@ background-repeat: no-repeat;
     word-wrap: break-word;
     max-width: 200px;
 }
-/*Tablet*/
-@media screen and (min-width:744px){
+/*-----------------------------------------Tablet-----------------------------------------------------------*/
+@media screen and (min-width:740px){
     .list-footer{
         column-count: 2;
     }
@@ -253,8 +258,11 @@ background-repeat: no-repeat;
     .logo-social_media{
         flex-direction: row;
     }
+    h2{
+        font-size: var(--h2size);
+    }
 }
-/*desktop*/
+/*-----------------------------------------------------------desktop-----------------------------------------------*/
 @media screen and (min-width:1000px){
     footer{
         display: flex;
@@ -267,6 +275,9 @@ background-repeat: no-repeat;
         width: 228px;
         height: 52px;
         padding: 10px;
+    }
+    header nav{
+        z-index: 0;
     }
     .option-container{
         justify-content: right;
@@ -299,6 +310,9 @@ background-repeat: no-repeat;
     .social_media-container,.footer-logo{
         margin: 20px 20px 0 20px;
     }
+    .social_media-container{
+        margin-right: 20px;
+    }
     .logo-social_media,.copy-footer{
         width: 50%;
         justify-content: space-around;
@@ -330,7 +344,7 @@ background-repeat: no-repeat;
 
 
 /*Navbar responsive*/
-@media screen and (max-width:800px ) {
+@media screen and (max-width:1000px ) {
     /*Elementos que aparecen*/
     header nav {
         width: 74%;

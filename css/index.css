@@ -56,7 +56,6 @@
     background-size: cover;
     background-position: center;
     font-size: var(--h3size);
-    font-size: var(--h3size);
 }
 .industriales-container{
     position: relative;
@@ -78,4 +77,69 @@
 }
 .sugeridos-container:hover .overlay, .recientes-container:hover .overlay, .accesorios-container:hover .overlay, .industriales-container:hover .overlay {
     opacity: 0;
-  }
+}
+.container-grid p {
+    margin: 10px;
+}
+
+/*
+TABLET STYLES
+*/
+@media screen and (min-width:744px){
+    .container-grid{
+        height: 544px;
+        width: 91.3%;
+    }
+    .container-grid{
+        height: 70vh;
+        width: 93%;
+        grid-template-areas: 'sugeridos sugeridos '
+                             'sugeridos sugeridos '
+                             'recientes accesorios'
+                             'recientes industriales';
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .industriales-container{
+        grid-area: industriales;
+    }
+    .accesorios-container{
+        grid-area: accesorios;
+    }
+    .recientes-container{
+        grid-area: recientes;
+    }
+    .sugeridos-container{
+        grid-area: sugeridos;
+    }
+
+    .sugeridos-container, .recientes-container, .accesorios-container, .industriales-container{
+        font-size: var(--h2size);
+    }
+}
+/*
+DESKTOP STYLES
+*/
+@media screen and (min-width:1000px){
+    .container-grid{
+        height: 55vh;
+        width: 93%;
+        grid-template-areas: 'sugeridos sugeridos recientes recientes'
+                            'sugeridos sugeridos accesorios industriales';
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .industriales-container{
+        grid-area: industriales;
+    }
+    .accesorios-container{
+        grid-area: accesorios;
+    }
+    .recientes-container{
+        grid-area: recientes;
+    }
+    .sugeridos-container{
+        grid-area: sugeridos;
+    }
+    
+}
