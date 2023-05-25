@@ -65,8 +65,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform: translateY(-50%);
     border-radius: 10px;
+    margin: 0 auto;
 }
 .photo-number p{
     font-size: var(--psize);
