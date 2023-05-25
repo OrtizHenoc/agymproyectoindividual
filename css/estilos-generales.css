@@ -25,6 +25,10 @@ body{
     color: var(--contrast3);
     font-size: 62.5%;
 }
+input{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--contrast2);
+}
 a{
     color: var(--contrast3);
     text-decoration: none;

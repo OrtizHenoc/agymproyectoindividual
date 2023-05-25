@@ -49,10 +49,11 @@
         </div>
     </header>
     <main>
-        <span class="images-container">
-            <span class="big-image">
-                <img src="../assets/car1.png" class="detail-image" alt="detail image car">
-                <span class="arrow-container left">
+        <div class="main1">
+            <span class="images-container">
+                <span class="big-image">
+                    <img src="../assets/car1.png" class="detail-image" alt="detail image car">
+                    <span class="arrow-container left">
                     <span class="arrow-left"></span>
                 </span>
                 <span class="photo-number">
@@ -87,57 +88,104 @@
                 </li>
             </ul>
         </span>
-        <section>
-            <p>
-                Fecha publicacion: 5/5/2023
-            </p>
-            <p>
-                Porshe
-            </p>
-            <p>
-                Kilometraje: 20000KM
-            </p>
-            <p>
-                Año: 2018
-            </p>
-            <p>
-                Modelo: Taycan
-            </p>
-            <p>
-                Combustible: Gasolina
-            </p>
-            <p>
-                Color: Negro
-            </p>
-            <p>
+        <section class="basic-description-container">
+            <div class="container1">
+                <span class="subcontainer">
+                    <p class="gray-text">
+                        Fecha publicacion: 5/5/2023
+                    </p>
+                    <p class="nombre-car">
+                        Porshe
+                    </p>
+                </span>
+                <span class="name_icon-container">
+                    <div class="circle">
+                        <span class="icon-user"></span>
+                    </div>
+                    <p class="nombre-user">Pepito Perez</p>
+                </span>
+            </div>
+            <ul class="specifications">
+                <li>
+                    <p>
+                        Kilometraje: 20000KM
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Año: 2018
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modelo: Taycan
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Combustible: Gasolina
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Cambio: Manual  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Color: Negro
+                    </p>
+                </li>
+            </ul>
+            <p class="gray-text phrase">
                 Precio al contado (Hoy no se fía, mañana si)
             </p>
-            <p>
+            <p class="price">
                 $20000
             </p>
         </section>
-        <section>
-            <p>
-                Comentarios del vendedor
-            </p>
-            <p>
+        <section class="comment-container">
+            <div class="container1">
+                <span class="subcontainer">
+                    <p class="comment-title">
+                        Comentarios del vendedor
+                    </p>
+                </span>
+                <span class="name_icon-container">
+                    <div class="circle">
+                        <span class="icon-user"></span>
+                    </div>
+                    <p class="nombre-user">Pepito Perez</p>
+                </span>
+            </div>
+            <p class="comment">
                 Se vende Porshe Sedan.Tiene todo hecho : DISTRIBUCIÓN, EMBRAGUE, TODOS LOS ACEITES, FILTROS, ANTICONGELANTE,  ACEITES DE LOS GRUPOS, PASTILLAS FRENOS NUEVAS, 4 RUEDAS NUEVAS.... Para andar en él sin gastar nada.  Motor muy fiable.Como nuevo, sin detallitos.Tiene Aire acondicionado recién cargado, llantas, abs, elevalunas en las 4 puertas, espejos electricos y plegables electronicamente, cristales tintados...Se encuentra en San Francisco.
             </p>
         </section>
-        <section>
-            <h4>
+        <section class="seguro-container">
+            <p class="seguro-title">
                 Contrata un seguro
-            </h4>
-            <p>
+            </p>
+            <p class="seguro-phrase">
                 Encuentra el mejor seguro comparando con varias empresas expertas en el ambito
             </p>
-            <span>
-                <a href="seguros.html">
-                    <img src="../assets/car-solid.svg" alt="" width="20px">
-                    <p>Contratar un seguro</p>
-                </a>
-            </span>
+            <a href="seguros.html" class="seguro-button">
+                <img src="../assets/car-solid.svg" alt="" width="20px">
+                <p>Contratar un seguro</p>
+            </a>
         </section>
+    </div>
+    <div class="main2">
+        <form action="#" class="contacto-container">
+            <h4>Contacta con el vendedor</h4>
+            <textarea name="meInteresa" id="meInteresa" placeholder="Me interesa este coche"></textarea>
+            <hr>
+            <input type="text" class="contacto-textbox" name="nombre" id="nombre" placeholder="Nombre:">
+            <input type="text" class="contacto-textbox" name="correo" id="correo" placeholder="Correo: correo@ejemplo.com">
+            <input type="text" class="contacto-textbox" name="telefono" id="telefono" placeholder="Telefono: +505 0000-0000">
+            <button class="send-button">Enviar datos</button>
+        </form>
+    </div>
         <h2>Segun tus intereses</h2>
         <div class="carrusel-container">
             <span class="carrusel-element">
