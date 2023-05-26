@@ -1,0 +1,65 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
+}
+.nombre-vendedor{
+    text-align: center;
+    font-size: var(--h4size);
+    margin: 10px;
+}
+.calificar-text,
+.clasificacion{
+    text-align: center;
+    font-size: var(--psize);
+    margin: 10px;
+}
+.circle-container{
+    width: 55.556%;
+    aspect-ratio: 1/1;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--contrast3);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+.icon-user{
+    width: 60%;
+    height: 60%;
+    background-image: url('/assets/user-solid.svg');
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.star-list{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    margin: 0 auto;
+    height: 20px;
+}
+.star-container{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fill-star{
+    background-image: url('/assets/star-solid.svg');
+}
+.empty-star{
+    background-image: url('/assets/black-star.svg');
+}

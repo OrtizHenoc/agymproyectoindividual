@@ -124,6 +124,8 @@ main h3{
     height: 250px;
     display: flex;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     margin: 0 auto;
     font-size: var(--h3size);

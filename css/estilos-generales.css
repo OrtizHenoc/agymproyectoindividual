@@ -33,6 +33,11 @@ a{
     color: var(--contrast3);
     text-decoration: none;
 }
+.carrito-link{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 ul{
     list-style-type: none;
 }
