@@ -38,7 +38,7 @@
 .icon-user{
     width: 60%;
     height: 60%;
-    background-image: url('/assets/user-solid.svg');
+    background-image: url('../assets/user-solid.svg');
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,8 +58,8 @@
     background-position: center;
 }
 .fill-star{
-    background-image: url('/assets/star-solid.svg');
+    background-image: url('../assets/star-solid.svg');
 }
 .empty-star{
-    background-image: url('/assets/black-star.svg');
+    background-image: url('../assets/black-star.svg');
 }

@@ -66,7 +66,7 @@ header nav{
     margin: 10px auto;
 }
 .logo-container .logo-icon{
-    background-image: url('/assets/Logo.png');
+    background-image: url('../assets/Logo.png');
     display: block;
     width: 100%;
     height: 100%;
@@ -128,7 +128,7 @@ header nav ul li a:hover{
 }
 
 .carrito-container{
-    background-image: url('/assets/cart-shopping-solid.svg');
+    background-image: url('../assets/cart-shopping-solid.svg');
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ header nav ul li a:hover{
     z-index: 2;
 }
 .user-icon{
-    background-image: url('/assets/user-solid.svg');
+    background-image: url('../assets/user-solid.svg');
     width: 50px;
     height: 50px;
     display: block;
@@ -156,7 +156,7 @@ header nav ul li a:hover{
     height: 52px;
 }
 .buscador{
-    background-image: url('/assets/magnifying-glass-solid.svg');
+    background-image: url('../assets/magnifying-glass-solid.svg');
     background-size: contain;
     width: 45px;
     height: 45px;
@@ -201,32 +201,32 @@ background-repeat: no-repeat;
 }
 
 .facebook-icon{
-    background-image: url('/assets/facebook.svg');
+    background-image: url('../assets/facebook.svg');
     height: 100%;
     width: 100%;
 }
 .insta-icon{
-    background-image: url('/assets/instagram.svg');
+    background-image: url('../assets/instagram.svg');
     height: 100%;
     width: 100%;
 }
 .linkedin-icon{
-    background-image: url('/assets/linkedin.svg');
+    background-image: url('../assets/linkedin.svg');
     height: 100%;
     width: 100%;
 }
 .twitter-icon{
-    background-image: url('/assets/twitter.svg');
+    background-image: url('../assets/twitter.svg');
     height: 100%;
     width: 100%;
 }
 .youtube-icon{
-    background-image: url('/assets/youtube.svg');
+    background-image: url('../assets/youtube.svg');
     height: 100%;
     width: 100%;
 }
 .tiktok-icon{
-    background-image: url('/assets/tiktok.svg');
+    background-image: url('../assets/tiktok.svg');
     height: 100%;
     width: 100%;
 }
@@ -399,7 +399,7 @@ background-repeat: no-repeat;
         height: 45px;
     }
     .icon-menuburguer{
-        background-image: url('/assets/bars-solid.svg');
+        background-image: url('../assets/bars-solid.svg');
         width: 45px;
         height: 45px;
         display: block;

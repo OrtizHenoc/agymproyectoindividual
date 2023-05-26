@@ -36,7 +36,7 @@
     left: 25px;
 }
 .arrow-right{
-    background-image: url('/assets/arrow-down-solid.svg');
+    background-image: url('../assets/arrow-down-solid.svg');
     width: 40px;
     height: 40px;
     transform: rotate(-90deg);
@@ -47,7 +47,7 @@
     display: inline-block;
 }
 .arrow-left{
-    background-image: url('/assets/arrow-down-solid.svg');
+    background-image: url('../assets/arrow-down-solid.svg');
     width: 40px;
     height: 40px;
     background-position: center;
@@ -74,7 +74,7 @@
 .icon-camera{
     height: 25px;
     width: 25px;
-    background-image: url('/assets/Camera.svg');
+    background-image: url('../assets/Camera.svg');
 }
 .detail-image{
     width: 100%;
@@ -145,7 +145,7 @@
     margin: 0 auto;
 }
 .icon-user{
-    background-image: url('/assets/user-solid.svg');
+    background-image: url('../assets/user-solid.svg');
     background-position: center;
     width: 65%;
     height: 65%;
@@ -251,5 +251,5 @@ hr{
     width: 83.33%;
     height: 400px;
     margin: 0 auto;
-    background-image: url('/assets/mapbackground.png');
+    background-image: url('../assets/mapbackground.png');
 }

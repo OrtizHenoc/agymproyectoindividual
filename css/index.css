@@ -36,7 +36,7 @@
 .sugeridos-container{
     position: relative;
     grid-area: sugeridos;
-    background-image: url('/assets/coches-sugeridos.png');
+    background-image: url('../assets/coches-sugeridos.png');
     background-size: cover;
     background-position: center;
     font-size: var(--h3size);
@@ -44,7 +44,7 @@
 .recientes-container{
     position: relative;
     grid-area: recientes;
-    background-image: url('/assets/mas-recientes.png');
+    background-image: url('../assets/mas-recientes.png');
     background-size: cover;
     background-position: center;
     font-size: var(--h3size);
@@ -52,7 +52,7 @@
 .accesorios-container{
     position: relative;
     grid-area: accesorios;
-    background-image: url('/assets/accesorios.png');
+    background-image: url('../assets/accesorios.png');
     background-size: cover;
     background-position: center;
     font-size: var(--h3size);
@@ -60,7 +60,7 @@
 .industriales-container{
     position: relative;
     grid-area: industriales;
-    background-image: url('/assets/vehiculos-industriales.png');
+    background-image: url('../assets/vehiculos-industriales.png');
     background-size: cover;
     background-position: center;
     font-size: var(--h3size);

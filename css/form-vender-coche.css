@@ -1,0 +1,20 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
+}
+form{
+    border: 1px solid var(--contrast3);
+    width: 86.11111%;
+    display: block;
+}
