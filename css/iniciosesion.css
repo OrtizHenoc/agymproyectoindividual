@@ -1,0 +1,57 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+    --cancel-butotn:#FF0000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
+}
+.form{
+    width: 83.33%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 730px;
+    justify-content: space-around;
+    text-align: center;
+}
+.textbox{
+    width: 91.333%;
+    height: 63px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: var(--h4size);
+    margin: 0 auto;
+}
+.button{
+    width: 60%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 20px;
+    color: var(--contrast3);
+    background-color: var(--contrast1);
+    font-size: var(--psize);
+    border: none;
+}
+.secondary{
+    background-color: var(--contrast3);
+    color: var(--contrast1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.google-icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../assets/google.svg');
+    background-repeat: no-repeat;
+}
