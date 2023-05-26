@@ -1,0 +1,140 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:15px;
+    --smallsize:12.8px;
+}
+
+.plans-container--slider{
+    display: block;
+    width: 93.88%;
+    align-items: center;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--contrast3);
+}
+.plans-container--slider > * {
+    margin: 0 20px;
+}
+.plans-container--card{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: center;
+    text-align: center;
+    width: 83.3333%;
+    max-width: 430px;
+    height: 350px;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+.descripcion-seguro h4{
+    margin: 5px 15px;
+}
+.beneficios-list,.cobertura-list {
+    margin: 15px;
+    font-size: var(--psize);
+}
+.beneficios-list li,.cobertura-list li{
+    margin: 10px 0;
+}
+.beneficios-list li::before,.cobertura-list li::before  {
+    content: "•";
+    color: var(--contrast3); 
+  }
+.plans-container--card > p {
+    margin: 15px 0 5px 0;
+}
+.plan-info-container{
+    margin: 0 0 15px 0;
+}
+.plan-info-container > *{
+    margin: 5px;
+}
+.name-plans{
+    width: 250px;
+    height: 50px;
+    padding: 6px;
+    line-height: 40px;
+    font-size: var(--h4size);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.standard .name-plans{
+    background-color: var(--primary-color);
+}
+.basic .name-plans{
+    background-color: var(--contrast1);
+}
+.premiun .name-plans{
+    background: linear-gradient(90deg, #1D0537 0%, rgba(39, 0, 88, 0.947917) 0.01%, rgba(206, 0, 255, 0) 96.87%);
+}
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--contrast3);
+}
+.plan-card--price{
+    padding: 5px 0;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--contrast3);
+}
+.plan-card--price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+/* .plan-card--saving {
+font-size: 1.2rem;
+color: var(--contrast3);
+} */
+.plan-card--ca{
+    width: 280px;
+    height: 52px;
+    display: block;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    font-size: var(--h4size);
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+    color: var(--contrast3);
+}
+main h3{
+    font-size: var(--h3size);
+    margin: 20px;
+}
+.basic .plan-card--ca{
+    border:  1px solid var(--contrast1);
+}
+.premiun .plan-card--ca{
+    border: 1px solid #A300CA;
+}
+.phrase-container{
+    background-image: url('/assets/segurosbackground.png');
+    width: 83.33%;
+    height: 250px;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: var(--h3size);
+    text-align: center;
+}

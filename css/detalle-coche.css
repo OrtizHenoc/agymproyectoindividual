@@ -157,7 +157,7 @@
     font-size: var(--smallsize);
 }
 .price,.phrase{
-    margin: 20px 70px 20px 70px;
+    margin: 5px 70px 5px 70px;
 }
 .comment-title{
     margin: 0 30px 0 30px;
@@ -217,9 +217,12 @@
     color: var(--contrast2);
     text-align: center;
     font-size: var(--psize);
+    padding: 60px;
 }
 hr{
     border-color: var(--contrast2);
+    margin: 20px auto 10px;
+    width: 88.8%;
 }
 .send-button{
     width: 161px;
@@ -228,6 +231,7 @@ hr{
     border-radius: 20px;
     color: var(--contrast3);
     margin: 0 auto;
+    border: none;
 }
 .contacto-textbox{
     width: 87.33%;
@@ -235,4 +239,17 @@ hr{
     color: var(--contrast3);
     font-size: var(--psize);
     border-radius: 10px;
+}
+.contacto-textbox::placeholder{
+    padding: 15px;
+}
+.map-text{
+    font-size: var(--h4size);
+    margin: 30px;
+}
+.map{
+    width: 83.33%;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url('/assets/mapbackground.png');
 }
