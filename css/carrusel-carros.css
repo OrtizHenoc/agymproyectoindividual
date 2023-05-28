@@ -21,10 +21,10 @@
     position: relative;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    scrollbar-width: thin;
     margin-bottom: 20px;
 }
-.arrow-container{
+
+/* .arrow-container{
     position: sticky;
     display: flex;
     float: right;
@@ -46,16 +46,13 @@
     background-repeat: no-repeat;
     transform: rotate(-90deg);
     margin: auto;
-  }
+  } */
   
-.carrusel-container::-webkit-scrollbar{
-    display: none;
-}
 .carrusel-element{
     width: 300px;
     height: 430px;
     font-size: var(--psize);
-    margin: 20px;
+    margin: 20px 40px 20px 40px;
     background-color: var(--background-elementc);
     box-shadow: 0px 4px 10px rgba(217, 161, 59, 0.8);
 }
