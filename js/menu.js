@@ -6,7 +6,6 @@ function main(){
     $('.bt-menu').click(function(){
         toggleNav();
     });
-    
     $(document).click(function(event){
         if(!$(event.target).closest('nav').length && !$(event.target).closest('.menu_bar').length) {
             closeNav();
