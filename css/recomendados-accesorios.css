@@ -100,8 +100,9 @@
 }
 .list-container{
     font-size: var(--smallsize);
-    column-count: 2;
     padding: 15px;
+    text-align: start;
+    margin: 0 auto;
 }
 .list-container li{
     margin: 0 0 15px 0;
@@ -130,6 +131,12 @@
     .image-container{
         height: 249px;
         width: 100%;
+    }
+    .photo-number p {
+        font-size: var(--psize);
+    }
+    .list-container{
+        font-size: var(--psize);
     }
 }
 

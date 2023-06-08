@@ -16,11 +16,12 @@
 
 .plans-container--slider{
     display: block;
-    width: 93.88%;
+    width: 93.88888%;
     align-items: center;
     margin: 20px auto;
     background-color: var(--secondary-color);
     border: 1px solid var(--contrast3);
+    max-width: 380px;
 }
 .plans-container--slider > * {
     margin: 0 20px;
@@ -36,8 +37,8 @@
     width: 83.3333%;
     max-width: 430px;
     height: 350px;
-    margin: 10px auto;
-    padding: 10px 15px;
+    margin: 10px auto 0px;
+    padding: 10px 15px 0px;
 }
 .descripcion-seguro h4{
     margin: 5px 15px;
@@ -48,6 +49,7 @@
 }
 .beneficios-list li,.cobertura-list li{
     margin: 10px 0;
+    line-height: 25px;
 }
 .beneficios-list li::before,.cobertura-list li::before  {
     content: "•";
@@ -137,4 +139,18 @@ main h3{
     margin: 0 auto;
     font-size: var(--h3size);
     text-align: center;
+}
+@media screen and (min-width:1000px) {
+    .plans-container--slider{
+        display: flex;
+        width: 85%;
+        max-width: 920px;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+    }
+    .title{
+        font-size: var(--h3size);
+    }
 }

@@ -84,16 +84,25 @@ header nav ul li{
 }
 header nav ul li a{
     padding: 20px;
-    display: block; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 header nav ul li a:hover{
     background: var(--contrast2);
 }
 /*Cuenta menu desplegable*/
-.cuenta-list li{
+.cuenta-list a{
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
 }
-.cuenta-list li a{
+
+.cuenta-list  a li{
     display: block;
 }
 .cuenta-list li a:hover{
@@ -103,7 +112,7 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column;
     width: 74%;
-    height: 80vh;   
+    height: 100vh;   
     left: -100%;
     top: 3%;
     background: var(--background);
@@ -111,13 +120,12 @@ header nav ul li a:hover{
     position: fixed;
     font-size: var(--psize);
 }
-.cuenta-list li{
-    padding: 20px;
-}
+
 .cuenta-title{
     font-size: var(--h4size);
-    margin: 5px 0 0 20px;
+    margin: 5px 0 20px 20px;
     font-weight: bold;
+    line-height: 1;
 }
 .option-container{
     width: 100%;
@@ -129,21 +137,62 @@ header nav ul li a:hover{
 
 .carrito-container{
     background-image: url('../assets/cart-shopping-solid.svg');
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .cuenta-container{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: block;
     z-index: 2;
 }
+.option-list{
+    border-top: 1px solid var(--contrast3);
+}
+.option-list a {
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+}
+.icon-cuenta,.icon-registrarse,.icon-cambiar,.icon-ver_usuario,.icon-cerrar_sesion,.icon-admin,.icon-vender_coche,.icon-seguros{
+    width: 35px;
+    height: 35px;
+    display: inline-block;  
+    background-repeat: no-repeat;
+}
+.icon-cuenta{
+    background-image: url('../assets/user-solid.svg');
+    margin-left: 10px;  
+}
+.icon-registrarse{
+    background-image: url('../assets/user-plus-solid.svg');
+    
+}
+.icon-cambiar{
+    background-image: url('../assets/repeat-solid.svg');
+}
+.icon-ver_usuario{
+    background-image: url('../assets/manage_accounts_black_24dp.svg');
+}
+.icon-cerrar_sesion{
+    background-image: url('../assets/right-from-bracket-solid.svg');
+}
+.icon-admin{
+    background-image: url('../assets/gears-solid.svg');
+}
+.icon-vender_coche{
+    background-image: url('../assets/car-side-solid.svg');
+}
+.icon-seguros{
+    background-image: url('../assets/shield-solid.svg');
+}
+/**/
 .user-icon{
     background-image: url('../assets/user-solid.svg');
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,8 +207,8 @@ header nav ul li a:hover{
 .buscador{
     background-image: url('../assets/magnifying-glass-solid.svg');
     background-size: contain;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     background-repeat: no-repeat;
     text-decoration: none;
 }
@@ -187,12 +236,13 @@ header nav ul li a:hover{
     justify-content: space-between;
     margin: 0 auto;
     max-width: 370px;
+    
 }
 .link > .facebook-icon, .link > .insta-icon,.link > .linkedin-icon, .link > .twitter-icon,
 .link> .youtube-icon, .link>.tiktok-icon {
     display: block;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
 }
 .facebook-icon, .insta-icon,.linkedin-icon,.twitter-icon,
 .youtube-icon, .tiktok-icon {
@@ -270,6 +320,17 @@ background-repeat: no-repeat;
     h2{
         font-size: var(--h2size);
     }
+    .link > .facebook-icon, .link > .insta-icon,.link > .linkedin-icon, .link > .twitter-icon,
+    .link> .youtube-icon, .link>.tiktok-icon {
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (min-width:440px) {
+    .cuenta-list{
+        width: 50%;
+    }
 }
 /*-----------------------------------------------------------desktop-----------------------------------------------*/
 @media screen and (min-width:1000px){
@@ -277,6 +338,24 @@ background-repeat: no-repeat;
         display: flex;
         justify-content: space-around;
         padding: 0 0 15px 0;
+    }
+    .cuenta-list{
+        font-size: var(--h4size);
+    }
+    .cuenta-list a{
+        padding: 40px;
+    }
+    .option-list{
+        border-top: none;
+    }
+    .icon-admin,.icon-vender_coche,.icon-seguros{
+        display: none;
+    }
+    nav{
+        line-height: 65px;
+    }
+    .option-list a{
+        margin: 0 10px 0 10px;
     }
     .buscador-container{
         border: 5px solid var(--contrast2);
@@ -326,6 +405,19 @@ background-repeat: no-repeat;
         width: 50%;
         justify-content: space-around;
     }
+    .link > .facebook-icon, .link > .insta-icon,.link > .linkedin-icon, .link > .twitter-icon,
+    .link> .youtube-icon, .link>.tiktok-icon {
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    .social_media-container{
+        margin: 20px 20px 20px 0;
+        
+    }
+    .footer-logo{
+        margin: 20px 20px 0 60px;
+    }
 }
 
 /*Buscador responsive*/
@@ -357,7 +449,8 @@ background-repeat: no-repeat;
     /*Elementos que aparecen*/
     header nav {
         width: 74%;
-        height: 80vh;
+        max-width: 250px;
+        height: 100vh;
         left: -100%;
         background: var(--background);
         margin: 0;
@@ -371,11 +464,14 @@ background-repeat: no-repeat;
     }
     
     /*Elementos que desaparecen*/
-    header nav ul li {
+    header nav ul a {
         display: block;
         float: none;
         font-size: var(--psize);
+        height: 90px;
+        padding: 20px;
     }
+    
     header nav ul li a:hover{
         background: var(--contrast2);
     }
@@ -385,7 +481,7 @@ background-repeat: no-repeat;
     }
     nav h4{
         display: block;
-        margin: 5px 0 0 20px;
+        margin: 15px 0 20px 20px;
     }
     nav ul{
         margin-top: 5px;
@@ -395,13 +491,13 @@ background-repeat: no-repeat;
         height: 45px;
     }
     .icon{
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
     }
     .icon-menuburguer{
         background-image: url('../assets/bars-solid.svg');
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         display: block;
         background-size: cover;
     }

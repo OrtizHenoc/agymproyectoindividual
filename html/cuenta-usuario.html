@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/detalle-seguros.css">
     <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/vendedor.css">
+    <link rel="stylesheet" href="../css/carrusel-carros.css">
     <link rel="icon" type="image/png" href="../assets/Logo.png">
-    <title>Detalle</title>
+    <title>Perfil del usuario</title>
 </head>
 <body>
     <header>
@@ -32,7 +33,7 @@
                 <input type="text" class="buscador-input" placeholder="Buscar">
             </span>
             <span class="carrito-container">
-                <a href="/html/carrito.html" class="carrito-link"></a>
+                <a href="./carrito.html" class="carrito-link"></a>
             </span>
             <span class="cuenta-container">
                 <span class="user-icon"></span>
@@ -49,46 +50,65 @@
         </div>
     </header>
     <main>
-        <section class="plans-container--slider">
-            <article class="plans-container--card basic">
-                <p class="name-plans">Basico</p>
-                <div class="plan-info-container">
-                    <h3 class="plan-card--title">Pago Mensual</h3>
-                    <p class="plan-card--price">$19</p>
-                    <a href="detalleseguros.html" class="plan-card--ca">Escoger este</a>
-                </div>
-            </article>
-            <span class="descripcion-seguro">
-                <div>
-                    <h4 class="title">
-                        Coberturas
-                    </h4>
-                    <ul class="cobertura-list">
-                        <li>
-                            Responsabilidad civil obligatoria: cubre los daños a terceros en caso de un accidente.
-                        </li>
-                        <li>
-                            Asistencia en carretera básica: cubre el servicio de grúa y reparaciones en caso de avería o accidente.
-                        </li>
-                        <li>
-                            Robo y hurto del vehículo: cubre el robo o hurto del vehículo asegurado.
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="title">Beneficios</h4>
-                    <ul class="beneficios-list">
-                        <li>
-                            Protección a un precio accesible
-                        </li>
-                        <li>
-                            Cumplimiento con la ley, al cubrir la responsabilidad civil obligatoria.
-                        </li>
-                    </ul>
-                </div>
-            </span>
-        </section>
-        
+        <span class="vendedor-container">
+            <h4 class="nombre-vendedor">Pepito Perez</h4>
+            <p class="clasificacion">Calificacion de Vendedor: <img src="../assets/star-solid.svg" alt="" width="20px"> 4.7/5</p>
+            
+            <div class="circle-container">
+                <span class="icon-user"></span>
+            </div>
+        </span>
+        <h2>Coches en venta</h2>
+        <div class="carrusel-container">
+            <div class="arrow-container">
+                <span class="arrow-right arrow"></span>
+            </div>
+            <span class="carrusel-element">
+                <img src="../assets/car1.png" class="img-car" alt="car">
+                <span class="details-container">
+                    <p>Usado</p>
+                    <p>Marca: Porshe Sedan</p>
+                    <p>Kilometraje: 2000km</p>
+                </span>
+                <a href="./detallecoche.html" class="buy-button">Comprar</a>    
+            </span>     
+            <span class="carrusel-element">
+                <img src="../assets/car2.png" alt="car" class="img-car">
+                <span class="details-container">
+                    <p>Usado</p>
+                    <p>Marca: Lamborghini</p>
+                    <p>Kilometraje: 1000km</p>
+                </span>
+                <a href="./detallecoche.html" class="buy-button">Comprar</a>
+            </span>     
+            <span class="carrusel-element">
+                <img src="../assets/car3.png" alt="car" class="img-car">
+                <span class="details-container">
+                    <p>Usado</p>
+                    <p>Marca: Chevrolet</p>
+                    <p>Kilometraje: 2500km</p>
+                </span>
+                <a href="./detallecoche.html" class="buy-button">Comprar</a>
+            </span>     
+            <span class="carrusel-element">
+                <img src="../assets/car4.png" alt="car" class="img-car">
+                <span class="details-container">
+                    <p>Usado</p>
+                    <p>Marca: Porshe 911</p>
+                    <p>Kilometraje: 3000km</p>
+                </span>
+                <a href="./detallecoche.html" class="buy-button">Comprar</a>
+            </span>     
+            <span class="carrusel-element">
+                <img src="../assets/car5.png" alt="car" class="img-car">
+                <span class="details-container">
+                    <p>Usado</p>
+                    <p>Marca: Mercedez-Benz</p>
+                    <p>Kilometraje: 2500km</p>
+                </span>
+                <a href="./detallecoche.html" class="buy-button">Comprar</a>        
+            </span>     
+        </div>
     </main>
     <footer>
         <section class="logo-social_media">
