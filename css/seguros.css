@@ -21,6 +21,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     overscroll-behavior-x: contain;
+    justify-content: space-between;
     scroll-snap-type: x proximity;
     align-items: center;
     margin: 20px auto;
