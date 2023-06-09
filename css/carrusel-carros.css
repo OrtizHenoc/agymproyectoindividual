@@ -6,6 +6,7 @@
     --contrast2: #8C8C8C;
     --contrast3: #F2F2F2;
     --background:#000000;
+    --background-delete:#FF0000;
     --background-elementc: #191919;
     --h1size:48.8px;
     --h2size:39.1px;
@@ -23,6 +24,7 @@
     scroll-snap-type: x proximity;
     margin-bottom: 20px;
 }
+
 
 /* .arrow-container{
     position: sticky;
@@ -79,4 +81,43 @@
     height: 36.9px;
     background-color: var(--primary-color);
     border-radius: 15px;
+}
+
+/*Botones del carrusel de cuenta-usuario*/
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    row-gap: 15px;
+    margin: 20px auto 0;
+}
+.button{
+    height: 40px;
+    color: var(--contrast3);
+    border-radius: 20px;
+    font-size: var(--psize);
+}
+.edit-button{
+    background-color: var(--contrast1);
+    line-height: 40px;
+}
+.delete-button{
+    background-color: var(--background-delete);
+    border: none;
+}
+
+
+.edit-button:hover{
+    color: var(--contrast1);
+    background-color: var(--contrast3);
+}
+.delete-button:hover{
+    color: var(--background-delete);
+    background-color: var(--contrast3);
+}
+.buy-button:hover{
+    color: var(--primary-color);
+    background-color: var(--contrast3);
 }

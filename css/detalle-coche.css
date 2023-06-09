@@ -13,6 +13,32 @@
     --psize:15px;
     --smallsize:12.8px;
 }
+/* .big-image{
+    background-image: url('../assets/car1.png');
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+h1{
+    font-size: var(--h4size);
+    margin: 15px;
+    display: block;
+}
+.component-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .images-container{
     width: 88.3%;
     display: flex;
@@ -20,25 +46,29 @@
     margin: 15px auto;
     position: relative;
 }
+.image-container{
+    height: 300px;
+}
+.detail-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
 .arrow-container{
     background-color: var(--background);
-    width: 50px;
-    height: 50px;
-    position: absolute;
+    width: 35px;
+    height: 35px;
     top: 50%;
-    transform: translateY(-50%);
-    border-radius: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.right{
-    right: 25PX;
-}
-.left{
-    left: 25px;
-}
+
 .arrow-right{
     background-image: url('../assets/arrow-down-solid.svg');
-    width: 40px;
-    height: 40px;
+    width: 70%;
+    height: 70%;
     transform: rotate(-90deg);
     background-position: center;
     background-repeat: no-repeat;
@@ -48,8 +78,8 @@
 }
 .arrow-left{
     background-image: url('../assets/arrow-down-solid.svg');
-    width: 40px;
-    height: 40px;
+    width: 70%;
+    height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(90deg);
@@ -61,13 +91,20 @@
     background-color: var(--background);
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 10px;
-    margin: 0 auto;
+    align-self: flex-end;
 }
+
+.photo-number{
+    background-color: var(--secondary-color);
+    width: 90px;
+    height: 40px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
 .photo-number p{
     font-size: var(--psize);
 }
@@ -76,11 +113,6 @@
     width: 25px;
     background-image: url('../assets/Camera.svg');
 }
-.detail-image{
-    width: 100%;
-    height: 40vh;
-    margin: 0 auto;
-}
 
 .small_carrusel-container{
     display: flex;
@@ -88,39 +120,57 @@
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
 }
 .small_carrusel-container li{
     margin: 0 25px  0 0;
 }
 .basic-description-container,.comment-container{
-    width: 88.88888889%;
-    height: 68vh;
+    
     border: 1px solid var(--contrast3);
     padding: 20px;
     text-align: center;
 }
-.basic-description-container,.comment-container, .seguro-container{
+.comment-container{
+    line-height: 20px;
+}
+.basic-description-container,.comment-container, .seguro-container,.contacto-container,.map-container{
+    width: 88.88888889%;
     background-color: var(--secondary-color);
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
-
-.subcontainer p{
-    margin: 20px 0 20px 0;
+.subcontainer{
+    display: flex;
+    align-items: center;
+}
+.comment-title{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     text-align: left;
+    font-size: var(--h4size);
+    width: 60%;
+    line-height: 1.5;
 }
 .specifications {
-    column-count: 2;
+    column-count: 1;
     font-size: var(--smallsize);
-    margin: 20px 0 20px 0;
+    margin: 10px 0 0 0;
 }
 .specifications li{
     margin: 0 0 20px 0;
     text-align: left;
 }
-.nombre-car, .nombre-user, .price,.comment-title{
+.nombre-car{
+    font-size: var(--h3size);
+    margin: 20px;
+}
+.nombre-user{
     font-size: var(--psize);
+}
+.price{
+    font-size: var(--h3size);
 }
 .container1{
     display: flex;
@@ -133,6 +183,11 @@
     width: 35%;
     display: block;
     text-align: center;
+}
+.vendedor-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .circle{
     width: 50px;
@@ -157,27 +212,28 @@
     font-size: var(--smallsize);
 }
 .price,.phrase{
-    margin: 5px 70px 5px 70px;
+    margin: 15px auto 0;
 }
-.comment-title{
-    margin: 0 30px 0 30px;
-}
+
 .comment{
     text-align: left;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 20px 0;
     font-size: var(--smallsize);
+    
 }
 .seguro-container{
-    width: 83.333%;
     margin: 0 auto;
     border: 1px solid var(--contrast3);
     padding: 20px;
 }
 .seguro-container > *{
-    margin: 5px 0 25px 0;
+    margin: 5px 0 20px 0;
 }
-.seguro-title,.seguro-phrase,.seguro-button{
+.seguro-phrase,.seguro-button{
     font-size: var(--psize);
+}
+.seguro-title{
+    font-size: var(--h4size);
 }
 .seguro-button{
     background-color: var(--contrast1);
@@ -185,7 +241,7 @@
     height: 50px;
     display: flex;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     align-items: center;
     justify-content: center;
 }
@@ -196,10 +252,14 @@
 .contacto-container{
     display: flex;
     flex-direction: column;
-    margin: 20px 0 20px 0;
+    margin: 30px auto 60px ;
+    width: 88.8888889%;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--contrast3);
 }
 .contacto-container > .contacto-textbox{
     margin: 20px auto;
+    padding-left: 10px;
 }
 .contacto-container h4{
     font-size: var(--h4size);
@@ -230,7 +290,7 @@ hr{
     background-color: var(--contrast1);
     border-radius: 20px;
     color: var(--contrast3);
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border: none;
 }
 .contacto-textbox{
@@ -244,12 +304,100 @@ hr{
     padding: 15px;
 }
 .map-text{
-    font-size: var(--h4size);
-    margin: 30px;
+    font-size: var(--h3size);
+    margin: 30px 0 15px 30px;
 }
 .map{
-    width: 83.33%;
+    width: 88.8888889%;
     height: 400px;
     margin: 0 auto;
     background-image: url('../assets/mapbackground.png');
+}
+
+/*-------------------------------------------------TABLET media querys-------------------------------------------------*/
+@media screen and (min-width: 500px) {
+    .image-container{
+        height: 390px;
+    }
+    .detail-image{
+        height: 100%;
+    }
+    .comment{
+        line-height: 2.5;
+    }
+    .specifications,.gray-text{
+        font-size: var(--psize);
+    }
+    .price{
+        margin-bottom: 15px;
+    }
+    h1{
+        font-size: var(--h1size);
+        margin: 15px 60px;
+    }
+}
+@media screen and (min-width: 744px) {
+    .image-container, .component-container{
+        height: 500px;
+        max-width: 613px;
+        margin: 0 auto;
+    }
+    .comment,.seguro-container{  
+        line-height: 35px;
+        font-size: var(--psize);
+    }
+    .map, .contacto-container{
+        width: 82.3924%;
+    }
+}
+/*---------------------------------------------------------Desktop media querys---------------------------------------------------------*/
+@media screen and (min-width: 1000px) {
+    .main1{
+        width: 55%;
+    }
+    .main2{
+        width: 30%;
+    }
+    .comment{
+        line-height: 1.8;
+    }
+    .specifications,.gray-text,.comment,.seguro-phrase{
+        font-size: var(--psize);
+    }
+    .specifications{
+        padding: 15px 50px;
+    }
+    .price,.nombre-car,.seguro-title,.comment-title{
+        font-size: var(--h3size);
+    }
+    .seguro-button{
+        font-size: var(--h4size);
+        width: 300px;
+        height: 60px;
+        border-radius: 25px;
+    }
+    .seguro-button img{
+        width: 40px;
+        height: 40px;
+    }
+    .image-container, .component-container,.images-container{
+        height: 500px;
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .small_carrusel-container{
+        width: 100%;
+        margin: 20px auto 10px ;
+    }
+    .map{
+        height: 838px;
+    }
+    .main-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    h2{
+        margin-top: 50px;
+    }
 }
