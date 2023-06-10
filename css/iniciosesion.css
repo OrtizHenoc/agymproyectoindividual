@@ -16,12 +16,15 @@
 }
 .form{
     width: 83.33%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     display: flex;
     flex-direction: column;
     height: 730px;
     justify-content: space-around;
     text-align: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--contrast3);
+    padding: 20px;
 }
 .textbox{
     width: 91.333%;
@@ -47,6 +50,11 @@
     display: flex;
     align-items: center;
     padding: 20px;
+    justify-content: center;
+    column-gap: 15px;
+}
+.change-password-link{
+    font-size: var(--psize);
 }
 .google-icon{
     width: 30px;
@@ -54,4 +62,28 @@
     display: block;
     background-image: url('../assets/google.svg');
     background-repeat: no-repeat;
+}
+@media screen and (min-width: 744px) {
+    .form{
+        width: 74%;
+    }
+    .button{
+        width: 65%;
+        font-size: var(--h4size);
+    }
+    .change-password-link{
+        font-size: var(--h4size);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .form{
+        width: 74%;
+        max-width: 600px;
+    }
+    .change-password-link{
+        font-size: var(--h4size);
+    }
+    h4{
+        font-size: var(--h2size);
+    }
 }

@@ -25,7 +25,7 @@
     margin: 10px;
 }
 .calificar-text,
-.calificación{
+.calificacion{
     text-align: center;
     font-size: var(--psize);
     margin: 10px;
@@ -74,7 +74,7 @@
     .nombre-vendedor{
         font-size: var(--h3size);
     }
-    .calificación{
+    .calificacion{
         font-size: var(--h4size);
     }
     .calificar-text{

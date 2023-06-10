@@ -18,7 +18,7 @@
     display: block;
     width: 93.88888%;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px auto 30px;
     background-color: var(--secondary-color);
     border: 1px solid var(--contrast3);
     max-width: 380px;
@@ -148,7 +148,7 @@ main h3{
         height: 80vh;
         justify-content: center;
         align-items: center;
-        margin: 40px auto;
+        margin: 40px auto 50px;
     }
     .title{
         font-size: var(--h3size);

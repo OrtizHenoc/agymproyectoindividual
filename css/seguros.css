@@ -129,7 +129,7 @@ main h3{
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: var(--h3size);
     text-align: center;
 }
