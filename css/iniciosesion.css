@@ -24,7 +24,7 @@ body{
     margin: 0 auto 30px;
     display: flex;
     flex-direction: column;
-    height: 730px;
+    height: 790px;
     justify-content: space-around;
     text-align: center;
     background-color: var(--secondary-color);
@@ -32,6 +32,9 @@ body{
     padding: 20px;
     align-self: center;
     justify-items: center;
+}
+.form-register{
+    height: 750px;
 }
 .textbox{
     width: 91.333%;
@@ -43,9 +46,9 @@ body{
     color: var(--contrast3);
 }
 .button{
-    width: 70%;
+    width: 70%; 
     margin: 0 auto;
-    height: 50px;
+    height: 40px;
     border-radius: 20px;
     color: var(--contrast3);
     background-color: var(--contrast1);
@@ -61,7 +64,7 @@ body{
     justify-content: center;
     column-gap: 15px;
 }
-.change-password-link{
+.change-password-link ,.terms-link{
     font-size: var(--psize);
 }
 .google-icon{
@@ -77,27 +80,56 @@ body{
         width: 74%;
     }
     .button{
-        width: 60%;
-        height: 60px;
+        width: 65%;
+        height: 50px;
         font-size: var(--h4size);
+        margin: 10px auto;
     }
-    .change-password-link{
+    .change-password-link, .terms-link{
         font-size: var(--h4size);
     }
     .textbox{
         font-size: var(--h4size);
         height: 65px;
+        margin: 15px auto;
     }
 }
 @media screen and (min-width: 1000px) {
     .form{
         width: 74%;
         max-width: 600px;
+        row-gap: 5px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        height: 790px;
     }
-    .change-password-link{
-        font-size: var(--h4size);
-    }
+
     h4{
         font-size: var(--h2size);
     }
+}
+
+/*Registro html*/
+.condiciones-checkbox{
+    display: flex;
+    margin: 0 auto;
+    width: 91.333%;
+    justify-content: center;
+    column-gap: 10px;
+    max-width: 400px;
+}
+
+.change-password-link, .terms-link{
+    text-decoration: underline;
+    margin: 15px auto;
+}
+.change-password-link:hover, .terms-link:hover{
+    cursor: pointer;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+.condiciones-checkbox label{
+    font-size: var(--psize);
 }
