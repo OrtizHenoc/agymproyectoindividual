@@ -25,6 +25,22 @@
     margin-bottom: 20px;
 }
 
+/* Estilos para el scrollbar */
+.carrusel-container::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+  }
+  
+  /* Estilos para el thumb (deslizador) del scrollbar */
+  .carrusel-container::-webkit-scrollbar-thumb {
+    background-color: #4b4337; /* Color del thumb */
+    border-radius: 5px; /* Borde redondeado del thumb */
+  }
+  
+  /* Estilos para el track (pista) del scrollbar */
+  .carrusel-container::-webkit-scrollbar-track {
+    background-color: #0D0D0D; /* Color del track */
+  }
+  
 
 /* .arrow-container{
     position: sticky;

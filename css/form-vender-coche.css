@@ -13,8 +13,204 @@
     --psize:15px;
     --smallsize:12.8px;
 }
-form{
+.form-container{
     border: 1px solid var(--contrast3);
     width: 86.11111%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    column-gap: 5px;
+    row-gap: 21px;
+    padding: 10px;
+    background: var(--secondary-color);
+}
+.img-icon-container{
+    background-image: url('../assets/image-solid.svg');
+    background-size:55.55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--contrast3);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
     display: block;
+    border-radius: 50%;
+}
+.img-text{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    text-align: center;
+    width: 60%;
+    transform: translate(-50%, -50%);
+}
+.img-text, .button-text{
+    font-size: var(--psize);
+}
+.img-button{
+    width: 210px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--contrast1);
+    border-radius: 20px;
+}
+.input-file{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.img-component{
+    border: 2px dashed var(--contrast2);
+    padding: 15px;
+    height: 320px;
+    position: relative;
+    width: 87.78%;
+    margin: 0 auto;
+}
+.label-title,.p-title{
+    font-size: var(--h4size);
+    display: block;
+}
+.label-subtitle{
+    font-size: var(--smallsize);
+}
+hr{
+    width: 88%;
+    margin: 20px auto;
+    border-color: var(--contrast2);
+}
+.input{
+    background-color: var(--secondary-color);
+    width: 91.96%;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid var(--contrast2);
+    padding-left: 15px;
+    margin-left: 5px;
+    color: var(--contrast3);
+}
+.input-radio{
+    width: 25px;
+    height: 25px;
+}
+.section1,.section2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 20px 0 40px;
+}
+.map{
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    background-image: url('../assets/mapbackground.png');
+}
+.tipocoche-container, .tipocambio-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0 20px 0;
+}
+.tipocoche-element, .tipocambio-element{
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+    text-align: center;
+    row-gap: 7px;
+    align-items: center;
+}
+.textarea{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 188px;
+    color: var(--contrast3);
+    padding: 20px;
+}
+.publish-button{
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--contrast1);
+    color: var(--contrast3);
+    margin: 20px auto;
+}
+.map-container,.info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 15px 0;
+}
+.info-container .label-title, .map-container p{
+    align-self: flex-start;
+}
+.map-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media screen and (min-width: 744px) {  
+    .form-container{
+        padding: 30px;
+    }
+    .map-info-container{
+        flex-direction: row;
+        column-gap: 30px;
+    }
+    .map, .textarea {
+        height: 220px;
+        max-width: 360px;
+    }
+    .input{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .section-container{
+        display: flex;
+        width: 100%;
+        column-gap: 30px;
+    }
+    .section1,.section2{
+        width: 100%;
+        height: 704px;
+        justify-content: space-evenly;
+    }
+    .map-info-container{
+        flex-direction: column;
+    }
+    .input{
+        max-width: 810px;
+        margin: 10px 0;
+    }
+    .img-component{
+        height: 390px;
+    }
+    .map{
+        margin: 0;
+    }
+    .map, .textarea {
+        max-width: 500px;
+    }
+    .map-container, .info-container{
+        align-items: flex-start;
+    }
 }
