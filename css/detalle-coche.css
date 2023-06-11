@@ -117,6 +117,7 @@ h1{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     margin: 20px 0 0 20px;
