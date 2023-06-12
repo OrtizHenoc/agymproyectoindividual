@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones de usuario</title>
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/opciones-usuario.css">
+    <link rel="icon" type="image/png" href="../assets/Logo.png">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo-container"><span class="logo-icon"></span></a>
+        <nav>
+            <h4>Opciones</h4>
+            <ul class="option-list">
+                <a href="./administracion.html">
+                    <li>
+                        Administracion de la pagina
+                    </li>
+                    <span class="icon-admin"></span>
+                </a>
+                <a href="./formularioVendercoche.html">
+                    <li>                    
+                        Vender tu coche
+                    </li>
+                    <span class="icon-vender_coche"></span>
+                </a>
+                <a href="./seguros.html">
+                    <li>
+                        Seguros
+                    </li>
+                    <span class="icon-seguros"></span>
+                </a>
+            </ul>
+        </nav>
+        <div class="option-container">
+            <span class="buscador-container">
+                <a href="#" class="buscador icon"><span class="icon-buscador"></span></a>
+                <input type="text" class="buscador-input" placeholder="Buscar">
+            </span>
+            <span class="carrito-container">
+                <a href="./carrito.html" class="carrito-link"></a>
+            </span>
+            <span class="cuenta-container">
+                <span class="user-icon"></span>
+                <ul class="cuenta-list">
+                    <h4 class="cuenta-title">Cuenta <span class="icon-cuenta"></span></h4>
+                    <hr>
+                    <a href="./registro.html">
+                        <li>Registrarse</li>
+                        <span class="icon-registrarse"></span>
+                    </a>
+                    <a href="./iniciosesion.html">
+                        <li>Usar otra cuenta</li>
+                        <span class="icon-cambiar"></span>
+                    </a>
+                    <a href="./cuenta-usuario.html">
+                        <li> Ver perfil</li>
+                        <span class="icon-ver_usuario"></span>
+                    </a>
+                    <a href="./registro.html">
+                        <li>Cerrar sesi&oacute;n</li>
+                        <span class="icon-cerrar_sesion"></span>
+                    </a>
+                </ul>
+            </span>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="icon-menuburguer icon"></span></a>
+            </div>
+        </div>
+    </header>
+    <!-- <main>
+        <section>
+          <div class="privacy-settings">
+            <h3>Configuración de Privacidad</h3>
+            <form>
+              <label for="profile-visibility">Visibilidad de Perfil:</label>
+              <select id="profile-visibility" name="profile-visibility">
+                <option value="public">Público</option>
+                <option value="private">Privado</option>
+                <option value="friends">Amigos</option>
+              </select>
+    
+              <label for="post-visibility">Visibilidad de Publicaciones:</label>
+              <select id="post-visibility" name="post-visibility">
+                <option value="public">Público</option>
+                <option value="private">Privado</option>
+                <option value="friends">Amigos</option>
+              </select>
+    
+              <button class="save-settings">Guardar Configuración</button>
+            </form>
+          </div>
+          <div class="permissions">
+            <h3>Gestión de Permisos</h3>
+            <ul class="permission-list">
+              <li>Permisos de Aplicaciones</li>
+              <li>Permisos de Servicios Conectados</li>
+            </ul>
+          </div>
+        </section>
+    
+        <section>
+          <h2>Historial de Transacciones y Actividad</h2>
+          <div class="purchase-history">
+            <h3>Compras Realizadas</h3>
+            <ul class="purchase-list">
+              <li>Fecha: 01/01/2022 - Artículo: Coche Marca Modelo</li>
+              <li>Fecha: 02/02/2022 - Artículo: Coche Marca Modelo</li>
+              <li>Fecha: 03/03/2022 - Artículo: Coche Marca Modelo</li>
+            </ul>
+          </div>
+          <div class="sale-history">
+            <h3>Ventas Realizadas</h3>
+            <ul class="sale-list">
+              <li>Fecha: 01/01/2022 - Artículo: Coche Marca Modelo</li>
+              <li>Fecha: 02/02/2022 - Artículo: Coche Marca Modelo</li>
+              <li>Fecha: 03/03/2022 - Artículo: Coche Marca Modelo</li>
+            </ul>
+          </div>
+          <div class="activity-log">
+            <h3>Registro de Actividad</h3>
+            <ul class="activity-list">
+              <li>Fecha: 01/01/2022 - Acción: Inicio de Sesión</li>
+              <li>Fecha: 02/02/2022 - Acción: Publicación de Coche</li>
+              <li>Fecha: 03/03/2022 - Acción: Compra de Coche</li>
+            </ul>
+          </div>
+        </section>
+      </main> -->
+    <main>
+        <section id="perfil">
+            <h2>Perfil de Usuario</h2>
+            <p>Aquí puedes editar la información de tu perfil, como tu nombre, foto de perfil, dirección, número de teléfono, etc.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                
+                <label for="foto">Foto de perfil:</label>
+                <input type="file" id="foto" name="foto">
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección">
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
+                
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
+        
+        <section id="notificaciones">
+            <h2>Preferencias de Notificación</h2>
+            <p>Configura tus preferencias de notificación para recibir alertas y actualizaciones sobre tus transacciones, ofertas especiales, etc.</p>
+            <ul>
+                <li>
+                    <input type="checkbox" id="notificacion1" name="notificacion1">
+                    <label for="notificacion1">Recibir alertas de nuevas ofertas</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="notificacion2" name="notificacion2">
+                    <label for="notificacion2">Recibir notificaciones de transacciones completadas</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="notificacion3" name="notificacion3">
+                    <label for="notificacion3">Recibir actualizaciones sobre cambios en los precios</label>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="privacidad">
+            <h2>Configuración de Privacidad</h2>
+            <p>Ajusta la configuración de privacidad de tu cuenta, como la visibilidad de tu perfil, la privacidad de las transacciones, etc.</p>
+            <ul>
+                <li>
+                    <input type="radio" id="privacidad1" name="privacidad" value="publico">
+                    <label for="privacidad1">Perfil público</label>
+                </li>
+                <li>
+                    <input type="radio" id="privacidad2" name="privacidad" value="privado">
+                    <label for="privacidad2">Perfil privado</label>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="contrasena">
+            <h2>Gestión de Contraseñas</h2>
+            <p>Cambia tu contraseña actual y configura medidas de seguridad adicionales para proteger tu cuenta.</p>
+            <form>
+                <label for="contrasena-actual">Contraseña actual:</label>
+                <input type="password" id="contrasena-actual" name="contrasena-actual">
+                
+                <label for="nueva-contrasena">Nueva contraseña:</label>
+                <input type="password" id="nueva-contrasena" name="nueva-contrasena">
+                
+                <label for="confirmar-contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena">
+                
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
+        
+        <section id="transacciones">
+            <h2>Historial de Transacciones</h2>
+            <p>Visualiza el historial completo de tus transacciones realizadas en la plataforma.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Monto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/05/2023</td>
+                        <td>Compra de coche marca XYZ</td>
+                        <td>$10,000</td>
+                    </tr>
+                    <tr>
+                        <td>15/06/2023</td>
+                        <td>Venta de coche marca ABC</td>
+                        <td>$8,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="busqueda">
+            <h2>Preferencias de Búsqueda</h2>
+            <p>Personaliza tus preferencias de búsqueda para encontrar los coches que se ajusten a tus criterios.</p>
+            <form>
+                <label for="marca">Marca:</label>
+                <select id="marca" name="marca">
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="ford">Ford</option>
+                </select>
+                
+                <label for="precio-max">Precio máximo:</label>
+                <input type="number" id="precio-max" name="precio-max">
+                
+                <label for="año-min">Año mínimo:</label>
+                <input type="number" id="año-min" name="año-min">
+                
+                <button type="submit">Guardar preferencias</button>
+            </form>
+        </section>
+        
+        <section id="email">
+            <h2>Configuración de Notificaciones por Correo Electrónico</h2>
+            <p>Configura las notificaciones por correo electrónico para recibir actualizaciones y comunicaciones importantes en tu bandeja de entrada.</p>
+            <form>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                
+                <ul>
+                    <li>
+                        <input type="checkbox" id="notificacion-email1" name="notificacion-email1">
+                        <label for="notificacion-email1">Recibir resumen semanal de actividades</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="notificacion-email2" name="notificacion-email2">
+                        <label for="notificacion-email2">Recibir notificaciones de nuevas ofertas</label>
+                    </li>
+                </ul>
+                
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
+        
+        <section id="ayuda">
+            <h2>Centro de Ayuda y Soporte</h2>
+            <p>Encuentra respuestas a tus preguntas más frecuentes y obtén ayuda y soporte personalizado de nuestro equipo de atención al cliente.</p>
+            <ul>
+                <li>
+                    <h3>Preguntas Frecuentes</h3>
+                    <p>Consulta nuestra lista de preguntas frecuentes para encontrar respuestas rápidas a tus dudas.</p>
+                    <ul>
+                        <li>
+                            <h4>¿Cómo puedo publicar un anuncio de venta?</h4>
+                            <p>Para publicar un anuncio de venta, sigue estos pasos:</p>
+                            <ol>
+                                <li>Inicia sesión en tu cuenta.</li>
+                                <li>Haz clic en el botón "Publicar Anuncio".</li>
+                                <li>Rellena los detalles del coche, como marca, modelo, año, etc.</li>
+                                <li>Adjunta imágenes del coche.</li>
+                                <li>Completa la descripción y el precio.</li>
+                                <li>Haz clic en "Publicar" para finalizar.</li>
+                            </ol>
+                        </li>
+                        <h4>¿Cómo puedo contactar a un vendedor?</h4>
+                        <li>
+                            <p>Para contactar a un vendedor, sigue estos pasos:</p>
+                            <ol>
+                                <li>Ve al anuncio del coche que te interesa.</li>
+                                <li>Haz clic en el botón "Contactar Vendedor".</li>
+                                <li>Rellena el formulario de contacto con tus detalles y mensaje.</li>
+                                <li>Haz clic en "Enviar" para enviar tu consulta.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Contáctanos</h3>
+                    <p>Si tienes alguna pregunta, problema o comentario, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                        
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                        
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                        
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </li>
+            </ul>
+        </section>
+
+        
+        <section id="cerrar-sesion">
+            <h2>Cerrar Sesión</h2>
+            <p>Si deseas salir de tu cuenta, puedes hacer clic en el botón de "Cerrar Sesión" para finalizar la sesión actual.</p>
+            <button>Salir</button>
+        </section>
+    </main>
+    <footer>
+        <section class="logo-social_media">
+            <a href="../index.html" class="logo-container footer-logo"><span class="logo-icon"></span></a>
+            <div class="social_media-container">
+                <a href="https://es-la.facebook.com/" target="_blank" class="link"><span class="icon facebook-icon"></span></a>
+                <a href="https://www.instagram.com/ " target="_blank" class="link"><span class="icon insta-icon"></span></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="link"><span class="icon linkedin-icon"></span></a>
+                <a href="https://www.twitter.com/" target="_blank" class="link"><span class="icon twitter-icon"></span></a>
+                <a href="https://www.youtube.com/" target="_blank" class="link"><span class="icon youtube-icon"></span></a>
+                <a href="https://www.tiktok.com/" target="_blank" class="link"><span class="icon tiktok-icon"></span></a>
+            </div>
+        </section>
+        <section class="copy-footer">
+            <ul class="list-footer">
+                <li>
+                    <a href="./acercade.html">Acerca de nosotros</a>
+                </li>
+                <li>
+                    <a href="./terrminos-condiciones.html">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="./confidencialidad.html">Confidencialidad</a>
+                </li>
+                <li>
+                    <a href="./opciones-usuario.html">Opciones de usuario</a>
+                </li>
+                <li>
+                    <a href="./accesibilidad.html">Accesibilidad</a>
+                </li>
+                <li>
+                    <a href="./configuracion-cookies.html">Configuracion de cookies</a>
+                </li>
+            </ul>
+            <p class="copy">
+                &copy; AutoCare Todos los derechos reservados.
+            </p>
+        </section>
+    </footer>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="../js/menu.js"></script>  
+</body>
+</html>
