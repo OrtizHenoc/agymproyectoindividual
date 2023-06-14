@@ -27,7 +27,7 @@ function toggleUser(){
     if(desplegado == true){
         $('.cuenta-list').animate({
             left:'0',
-            top:'3%'
+            top:'0%'
         });
         desplegado = false;
     } else {
@@ -38,7 +38,7 @@ function toggleUser(){
 function cerrarDesplegable(){
     $('.cuenta-list').animate({
         left: '-100%',
-        top:'3%'
+        top:'0%'
     });
     desplegado = true;
 }

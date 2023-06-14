@@ -17,19 +17,28 @@
 body{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
     justify-content: center;
 }
-.form{
+.carimage-container{
+    display: none;
+}
+.content-container{
     width: 83.33%;
-    margin: 0 auto 30px;
+    height: 80.75%;
+    margin: 0 auto;
+}
+.form{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 790px;
-    justify-content: space-around;
+    height: 100%;
+    justify-content: space-evenly;
     text-align: center;
     background-color: var(--secondary-color);
     border: 1px solid var(--contrast3);
-    padding: 20px;
+    padding: 5px;
     align-self: center;
     justify-items: center;
 }
@@ -38,7 +47,7 @@ body{
 }
 .textbox{
     width: 91.333%;
-    height: 40px;
+    height: 30px;
     border-radius: 10px;
     padding: 15px;
     font-size: var(--psize);
@@ -46,9 +55,9 @@ body{
     color: var(--contrast3);
 }
 .button{
-    width: 70%; 
+    width: 60%; 
     margin: 0 auto;
-    height: 40px;
+    height: 35px;
     border-radius: 20px;
     color: var(--contrast3);
     background-color: var(--contrast1);
@@ -63,6 +72,7 @@ body{
     padding: 20px;
     justify-content: center;
     column-gap: 15px;
+    height: 25px;
 }
 .change-password-link ,.terms-link{
     font-size: var(--psize);
@@ -76,35 +86,67 @@ body{
     background-position: center;
 }
 @media screen and (min-width: 744px) {
-    .form{
-        width: 74%;
+    .content-container{
+        width: 74.32%;
+        height: 66.19%;
     }
     .button{
         width: 65%;
-        height: 50px;
-        font-size: var(--h4size);
+        height: 25px;
+        font-size: var(--psize);
         margin: 10px auto;
     }
     .change-password-link, .terms-link{
-        font-size: var(--h4size);
+        font-size: var(--psize);
     }
     .textbox{
-        font-size: var(--h4size);
-        height: 65px;
+        font-size: var(--psize);
+        height: 35px;
         margin: 15px auto;
+    }
+    body > a {
+        width: 120px;
+        height: 40px;
+        margin: 15px auto;
+    }
+    .logo-container{
+        width: 100%;
+        height: 100%;
+    }
+    h4{
+        font-size: var(--h3size);
     }
 }
 @media screen and (min-width: 1000px) {
     .form{
-        width: 74%;
-        max-width: 600px;
-        padding-bottom: 60px;
-        padding-top: 60px;
-        height: 790px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
-
+    .content-container{
+        display: flex;
+        height: 85vh;
+    }
     h4{
-        font-size: var(--h2size);
+        font-size: var(--h4size);
+    }
+    .textbox{
+        height: 35px;
+    }
+    body > a {
+        width: 150px;
+        height: 50px;
+        margin: 15px auto;
+    }
+    .button{
+        width: 75%;
+    }
+    .carimage-container{
+        display: block;  
+        background-size: cover;   
+    }
+    .carimage-container,.form{
+        width: 50%;
+        height: 100%;
     }
 }
 
