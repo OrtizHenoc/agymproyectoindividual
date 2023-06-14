@@ -59,3 +59,8 @@
   small {
     font-size: var(--smallsize);
   }
+
+  .link-cookies{
+    color: rgb(72 143 241);
+  }
+

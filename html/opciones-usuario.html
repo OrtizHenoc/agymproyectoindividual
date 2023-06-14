@@ -70,65 +70,6 @@
             </div>
         </div>
     </header>
-    <!-- <main>
-        <section>
-          <div class="privacy-settings">
-            <h3>Configuración de Privacidad</h3>
-            <form>
-              <label for="profile-visibility">Visibilidad de Perfil:</label>
-              <select id="profile-visibility" name="profile-visibility">
-                <option value="public">Público</option>
-                <option value="private">Privado</option>
-                <option value="friends">Amigos</option>
-              </select>
-    
-              <label for="post-visibility">Visibilidad de Publicaciones:</label>
-              <select id="post-visibility" name="post-visibility">
-                <option value="public">Público</option>
-                <option value="private">Privado</option>
-                <option value="friends">Amigos</option>
-              </select>
-    
-              <button class="save-settings">Guardar Configuración</button>
-            </form>
-          </div>
-          <div class="permissions">
-            <h3>Gestión de Permisos</h3>
-            <ul class="permission-list">
-              <li>Permisos de Aplicaciones</li>
-              <li>Permisos de Servicios Conectados</li>
-            </ul>
-          </div>
-        </section>
-    
-        <section>
-          <h2>Historial de Transacciones y Actividad</h2>
-          <div class="purchase-history">
-            <h3>Compras Realizadas</h3>
-            <ul class="purchase-list">
-              <li>Fecha: 01/01/2022 - Artículo: Coche Marca Modelo</li>
-              <li>Fecha: 02/02/2022 - Artículo: Coche Marca Modelo</li>
-              <li>Fecha: 03/03/2022 - Artículo: Coche Marca Modelo</li>
-            </ul>
-          </div>
-          <div class="sale-history">
-            <h3>Ventas Realizadas</h3>
-            <ul class="sale-list">
-              <li>Fecha: 01/01/2022 - Artículo: Coche Marca Modelo</li>
-              <li>Fecha: 02/02/2022 - Artículo: Coche Marca Modelo</li>
-              <li>Fecha: 03/03/2022 - Artículo: Coche Marca Modelo</li>
-            </ul>
-          </div>
-          <div class="activity-log">
-            <h3>Registro de Actividad</h3>
-            <ul class="activity-list">
-              <li>Fecha: 01/01/2022 - Acción: Inicio de Sesión</li>
-              <li>Fecha: 02/02/2022 - Acción: Publicación de Coche</li>
-              <li>Fecha: 03/03/2022 - Acción: Compra de Coche</li>
-            </ul>
-          </div>
-        </section>
-      </main> -->
     <main>
         <section id="perfil">
             <h2>Perfil de Usuario</h2>
@@ -213,15 +154,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="impar">
                         <td>01/05/2023</td>
                         <td>Compra de coche marca XYZ</td>
                         <td>$10,000</td>
                     </tr>
-                    <tr>
+                    <tr class="par">
                         <td>15/06/2023</td>
                         <td>Venta de coche marca ABC</td>
                         <td>$8,500</td>
+                    </tr>
+                    <tr class="impar">
+                        <td>16/06/2023</td>
+                        <td>Venta de coche marca Toyota</td>
+                        <td>$8,500</td>
+                    </tr>
+                    <tr class="par">
+                        <td>17/06/2023</td>
+                        <td>Venta de coche marca Toyota</td>
+                        <td>$9,500</td>
                     </tr>
                 </tbody>
             </table>
@@ -231,18 +182,23 @@
             <h2>Preferencias de Búsqueda</h2>
             <p>Personaliza tus preferencias de búsqueda para encontrar los coches que se ajusten a tus criterios.</p>
             <form>
-                <label for="marca">Marca:</label>
-                <select id="marca" name="marca">
-                    <option value="toyota">Toyota</option>
-                    <option value="honda">Honda</option>
-                    <option value="ford">Ford</option>
-                </select>
+                <span>
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca">
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                    </select>
+                </span>
                 
-                <label for="precio-max">Precio máximo:</label>
-                <input type="number" id="precio-max" name="precio-max">
-                
-                <label for="año-min">Año mínimo:</label>
-                <input type="number" id="año-min" name="año-min">
+                <span>
+                    <label for="precio-max">Precio máximo:</label>
+                    <input type="number" id="precio-max" name="precio-max">
+                </span>
+                <span>
+                    <label for="año-min">Año mínimo:</label>
+                    <input type="number" id="año-min" name="año-min">
+                </span>
                 
                 <button type="submit">Guardar preferencias</button>
             </form>
@@ -257,11 +213,11 @@
                 
                 <ul>
                     <li>
-                        <input type="checkbox" id="notificacion-email1" name="notificacion-email1">
+                        <input type="checkbox" id="notificacion-email1" class="check" name="notificacion-email1">
                         <label for="notificacion-email1">Recibir resumen semanal de actividades</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="notificacion-email2" name="notificacion-email2">
+                        <input type="checkbox" id="notificacion-email2" class="check" name="notificacion-email2">
                         <label for="notificacion-email2">Recibir notificaciones de nuevas ofertas</label>
                     </li>
                 </ul>
@@ -309,8 +265,8 @@
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
                         
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                        <label for="email-input">Correo electrónico:</label>
+                        <input type="email" id="email-input" name="email-input" placeholder="Ingresa tu correo electrónico">
                         
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
@@ -325,7 +281,7 @@
         <section id="cerrar-sesion">
             <h2>Cerrar Sesión</h2>
             <p>Si deseas salir de tu cuenta, puedes hacer clic en el botón de "Cerrar Sesión" para finalizar la sesión actual.</p>
-            <button>Salir</button>
+            <a href="./iniciosesion.html">Cerrar Sesión</a>
         </section>
     </main>
     <footer>
