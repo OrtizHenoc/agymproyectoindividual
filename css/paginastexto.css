@@ -64,3 +64,20 @@
     color: rgb(72 143 241);
   }
 
+  #accessibility-form div,#cookie-form div { 
+    font-size: var(--psize);
+    padding: 10px;
+  }
+  #cookie-form button{
+    border: none;
+    background-color: var(--contrast1);
+    color: var(--contrast3);
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  #politica-cookies ul li{
+    margin: 10px;
+  }
+
