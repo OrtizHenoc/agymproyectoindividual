@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de la pagina</title>
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/administracion.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo-container"><span class="logo-icon"></span></a>
+        <nav>
+            <h4>Opciones</h4>
+            <ul class="option-list">
+                <a href="./administracion.html">
+                    <li>
+                        Administracion de la pagina
+                    </li>
+                    <span class="icon-admin"></span>
+                </a>
+                <a href="./formularioVendercoche.html">
+                    <li>                    
+                        Vender tu coche
+                    </li>
+                    <span class="icon-vender_coche"></span>
+                </a>
+                <a href="./seguros.html">
+                    <li>
+                        Seguros
+                    </li>
+                    <span class="icon-seguros"></span>
+                </a>
+            </ul>
+        </nav>
+        <div class="option-container">
+            <span class="buscador-container">
+                <a href="#" class="buscador icon"><span class="icon-buscador"></span></a>
+                <input type="text" class="buscador-input" placeholder="Buscar">
+            </span>
+            <span class="carrito-container">
+                <a href="./carrito.html" class="carrito-link"></a>
+            </span>
+            <span class="cuenta-container">
+                <span class="user-icon"></span>
+                <ul class="cuenta-list">
+                    <h4 class="cuenta-title">Cuenta <span class="icon-cuenta"></span></h4>
+                    <hr>
+                    <a href="./registro.html">
+                        <li>Registrarse</li>
+                        <span class="icon-registrarse"></span>
+                    </a>
+                    <a href="./iniciosesion.html">
+                        <li>Usar otra cuenta</li>
+                        <span class="icon-cambiar"></span>
+                    </a>
+                    <a href="./cuenta-usuario.html">
+                        <li> Ver perfil</li>
+                        <span class="icon-ver_usuario"></span>
+                    </a>
+                    <a href="./registro.html">
+                        <li>Cerrar sesi&oacute;n</li>
+                        <span class="icon-cerrar_sesion"></span>
+                    </a>
+                </ul>
+            </span>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="icon-menuburguer icon"></span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="introduction">
+            <h1 class="main-title title">Panel de administración de la página</h1>
+            <p class="gray subtitle">Resumen de estadistícas y gestión de la página</p>
+            <ul>
+                <li><a href="#actividad-reciente">Actividad reciente</a></li>
+                <li><a href="#seguimiento-progreso">Seguimiento de progreso</a></li>
+                <li><a href="#resumen"></a>Resumen de actividades</li>
+                <li><a href="#estadisticas">Estadísticas del sitio</a></li>
+                <li><a href="#graficos">Graficos</a></li>
+                <li><a href="#tabla-usuarios">Usuarios</a></li>
+            </ul>
+        </section>
+        <section class="recentactivity-container">
+            <h1 id="actividad-reciente" class="recentactivity-title title">Actividad reciente</h1>
+            <span class="row-container">
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">27 min</p>
+                        <div class="row-marker-dot bg-green"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>¡Nuevo pedido realizado! El pedido <b>#2912</b> se ha realizado con éxito.</p>
+                    </span>
+                </span>
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">58 min</p>
+                        <div class="row-marker-dot bg-blue"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>Se ha generado y está listo para ver tu informe semanal.</p>
+                    </span>
+                </span>
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">2 hrs</p>
+                        <div class="row-marker-dot bg-purple"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>Se ha registrado un nuevo usuario: Valerie Luna.</p>
+                    </span>
+                </span>
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">1 día</p>
+                        <div class="row-marker-dot bg-orange"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>Alerta del monitor de actividad del servidor.</p>
+                    </span>
+                </span>
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">1 día</p>
+                        <div class="row-marker-dot bg-green"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>¡Nuevo pedido realizado! El pedido <b>#2911</b> se ha realizado con éxito.</p>
+                    </span> 
+                </span>
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">1 día</p>
+                        <div class="row-marker-dot bg-purple"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>Se han actualizado los detalles para la reunión de Marketing y Planificación.</p>
+                    </span> 
+                </span>
+                <span class="row">
+                    <span class="row-marker">
+                        <p class="gray row-marker-text">2 días</p>
+                        <div class="row-marker-dot bg-green"></div>
+                    </span>
+                    <span class="row-content">
+                        <p>¡Nuevo pedido realizado! El pedido #2910 se ha realizado con éxito.</p>
+                    </span> 
+                </span>
+            </span>
+        </section>
+        <section class="progresstracker-container">
+            <h1 id="seguimiento-progreso" class="progresstracker-title title">Seguimiento de progreso</h1>
+            <span class="bar-container">
+                <span class="bar">
+                    <span class="bar-text">
+                        <p class="bar-description">Migración de servidor</p>
+                        <p class="bar-percent">20%</p>
+                    </span>
+                    <span class="bar-content">
+                        <span class="bar-bg">
+                            <span class="bar-progress red"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="bar">
+                    <span class="bar-text">
+                        <p class="bar-description">Seguimiento de ventas</p>
+                        <p class="bar-percent">40%</p>
+                    </span>
+                    <span class="bar-content">
+                        <span class="bar-bg">
+                            <span class="bar-progress orange"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="bar">
+                    <span class="bar-text">
+                        <p class="bar-description">Base de datos de clientes</p>
+                        <p class="bar-percent">60%</p>
+                    </span>
+                    <span class="bar-content">
+                        <span class="bar-bg">
+                            <span class="bar-progress blue"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="bar">
+                    <span class="bar-text">
+                        <p class="bar-description">Detalles de pago </p>
+                        <p class="bar-percent">80%</p>
+                    </span>
+                    <span class="bar-content">
+                        <span class="bar-bg">
+                            <span class="bar-progress light-blue"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="bar">
+                    <span class="bar-text">
+                        <p class="bar-description">Configuracion del sitio</p>
+                        <p class="bar-percent">Completado</p>
+                    </span>
+                    <span class="bar-content">
+                        <span class="bar-bg">
+                            <span class="bar-progress green"></span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="down-container">
+                <p class="down-text gray">Ver detalles de progreso</p>
+                <span class="down-icon"></span>
+            </span>
+        </section>
+        <section class="resumen-container">
+            <h1 id="resumen" class="resumen-title title">Resumen de actividades</h1>
+            <span class="box-container">
+                <div class="box1 box">
+                    <span class="box-content">
+                        <span class="box-text-container">
+                            <p class="box-text">Ganancias (mensuales)</p>
+                            <p class="box-bgtext">C$20,000</p>
+                        </span>
+                        <span class="box-icon icon"></span>
+                    </span>
+                    <span class="down-container">
+                        <p class="down-text">Ver reporte</p>
+                        <span class="down-icon"></span>
+                    </span>
+                </div>
+                <div class="box2 box">
+                    <span class="box-content">
+                        <span class="box-text-container">
+                            <p class="box-text">Ganancias anuales</p>
+                            <p class="box-bgtext">C$150,200</p>
+                        </span>
+                        <span class="box-icon icon"></span>
+                    </span>
+                    <span class="down-container">
+                        <p class="down-text">Ver reporte</p>
+                        <span class="down-icon"></span>
+                    </span>
+                </div>
+                <div class="box3 box">
+                    <span class="box-content">
+                        <span class="box-text-container">
+                            <p class="box-text">Tareas completadas</p>
+                            <p class="box-bgtext">12+1</p>
+                        </span>
+                        <span class="box-icon icon"></span>
+                    </span>
+                    <span class="down-container">
+                        <p class="down-text">Ver tareas</p>
+                        <span class="down-icon"></span>
+                    </span>
+                </div>
+                <div class="box4 box">
+                    <span class="box-content">
+                        <span class="box-text-container">
+                            <p class="box-text">Solicitudes pendientes</p>
+                            <p class="box-bgtext">25</p>
+                        </span>
+                        <span class="box-icon icon"></span>
+                    </span>
+                    <span class="down-container">
+                        <p class="down-text">Ver solicitudes</p>
+                        <span class="down-icon"></span>
+                    </span>
+                </div>
+            </span>
+        </section>
+    </main>
+    <footer>
+        <section class="logo-social_media">
+            <a href="../index.html" class="logo-container footer-logo"><span class="logo-icon"></span></a>
+            <div class="social_media-container">
+                <a href="https://es-la.facebook.com/" target="_blank" class="link"><span class="icon facebook-icon"></span></a>
+                <a href="https://www.instagram.com/ " target="_blank" class="link"><span class="icon insta-icon"></span></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="link"><span class="icon linkedin-icon"></span></a>
+                <a href="https://www.twitter.com/" target="_blank" class="link"><span class="icon twitter-icon"></span></a>
+                <a href="https://www.youtube.com/" target="_blank" class="link"><span class="icon youtube-icon"></span></a>
+                <a href="https://www.tiktok.com/" target="_blank" class="link"><span class="icon tiktok-icon"></span></a>
+            </div>
+        </section>
+        <section class="copy-footer">
+            <ul class="list-footer">
+                <li>
+                    <a href="./acercade.html">Acerca de nosotros</a>
+                </li>
+                <li>
+                    <a href="./terrminos-condiciones.html">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="./confidencialidad.html">Confidencialidad</a>
+                </li>
+                <li>
+                    <a href="./opciones-usuario.html">Opciones de usuario</a>
+                </li>
+                <li>
+                    <a href="./accesibilidad.html">Accesibilidad</a>
+                </li>
+                <li>
+                    <a href="./configuracion-cookies.html">Configuracion de cookies</a>
+                </li>
+            </ul>
+            <p class="copy">
+                &copy; AutoCare Todos los derechos reservados.
+            </p>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

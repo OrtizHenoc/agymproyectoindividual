@@ -41,10 +41,9 @@ body{
     padding: 5px;
     align-self: center;
     justify-items: center;
+    position: relative;
 }
-.form-register{
-    height: 750px;
-}
+
 .textbox{
     width: 91.333%;
     height: 30px;
@@ -96,6 +95,12 @@ body{
         font-size: var(--psize);
         margin: 10px auto;
     }
+    .unlock-icon{
+        height: 100px;
+        width: 100px;
+        top: 40%;
+        left: 55%;
+    }
     .change-password-link, .terms-link{
         font-size: var(--psize);
     }
@@ -124,7 +129,10 @@ body{
     }
     .content-container{
         display: flex;
-        height: 85vh;
+        height: 70vh;
+    }
+    .cambiar-contra{
+        width: 50%;
     }
     h4{
         font-size: var(--h4size);
@@ -137,9 +145,6 @@ body{
         height: 50px;
         margin: 15px auto;
     }
-    .button{
-        width: 75%;
-    }
     .carimage-container{
         display: block;  
         background-size: cover;   
@@ -147,6 +152,10 @@ body{
     .carimage-container,.form{
         width: 50%;
         height: 100%;
+    }
+    .unlock-icon{
+        position: relative;
+        display: none;
     }
 }
 
@@ -174,3 +183,43 @@ body{
 .condiciones-checkbox label{
     font-size: var(--psize);
 }
+.cambiar-contra{
+    width: 80%;
+    background-color: var(--secondary-color);
+    border: var(--contrast3) 1px solid;
+    margin: 0 auto;
+}
+.cambiar-contra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.group-contra > *{
+    display: block;
+    margin: 20px;
+    color: var(--contrast3);
+}
+.group-contra > label{
+    font-size: var(--psize);
+}
+.continue-button{
+    width: 60%; 
+    text-align: center;
+    line-height: 2;
+    height: 35px;
+    border-radius: 20px;
+    color: var(--contrast3);
+    background-color: var(--contrast1);
+    font-size: var(--psize);
+    border: none;
+}
+/* .unlock-icon{
+    background-image: url('../assets/unlock-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 25%;
+    left: 60%;
+} */
