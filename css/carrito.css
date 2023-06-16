@@ -97,6 +97,7 @@
     height: 36px;
     color: var(--contrast3);
 }
+
 /*Tablet*/
 @media screen and (min-width:744px ){
     .main-container{
