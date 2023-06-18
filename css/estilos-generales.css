@@ -57,13 +57,13 @@ nav h4{
 
 header nav{
     width: 36%;
-    z-index: 3;
+    z-index: 99999999;
 }
 .logo-container{
     display: block;
     width: 138px;
     height: 43px;
-    margin: 10px auto;
+    margin: 10px;
 }
 .logo-container .logo-icon{
     background-image: url('../assets/Logo.png');
@@ -130,6 +130,7 @@ header nav ul li a:hover{
 }
 .option-container{
     width: 100%;
+    max-width: 420px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -147,10 +148,11 @@ header nav ul li a:hover{
     width: 35px;
     height: 35px;
     display: block;
-    z-index: 2;
+    z-index: 9999999;
 }
 .option-list{
     border-top: 1px solid var(--contrast3);
+    font-size: 20px;
 }
 .option-list a {
     display: flex;
@@ -348,13 +350,15 @@ background-repeat: no-repeat;
     }
     .option-list{
         border-top: none;
+        align-items: center;
+    }
+    .option-list a{
+        height: 45px;
     }
     .icon-admin,.icon-vender_coche,.icon-seguros{
         display: none;
     }
-    nav{
-        line-height: 65px;
-    }
+    
     .option-list a{
         margin: 0 10px 0 10px;
     }
@@ -380,8 +384,7 @@ background-repeat: no-repeat;
     }
     nav ul{
         display: flex;
-        width: 450px;
-        font-size: var(--psize);
+        height: 100%;
     }
     nav ul li{
         width: 100%;
@@ -391,7 +394,8 @@ background-repeat: no-repeat;
         margin: 0 60px 0 0 ;
     }
     .logo-container{
-        width: 195px;
+        width: 220px;
+        height: 60px;
     }
     .list-footer li{
         margin: 0 auto;
