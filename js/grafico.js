@@ -14,7 +14,7 @@ var layout1 = {
         }
       },
     title:{
-        text:'Ventas de los ultimos 6 meses',
+        text:'Ventas de los últimos 6 meses',
         font:{
             color:'#ffffff'
         }
@@ -52,7 +52,7 @@ var layout2 = {
           color: '#ffffff' // Color de texto de la leyenda
         }
     },
-    margin: {"t": 0, "b": 0, "l": 0, "r": 0},
+    margin: {"t": 40, "b": 30, "l": 30, "r": 30},
     autosize: true,
 }
 var data2 = [{

@@ -6,11 +6,11 @@
     --contrast2: #8C8C8C;
     --contrast3: #F2F2F2;
     --timeline: #383838;
-    --contrast4: #e4761cad;
+    --contrast4: #e4761c80;
     --contrastborder4: #e4761c;
-    --contrast5: #e14c2aab;
-    --contrast6: #cd104cbe;
-    --contrast7: #9c2c7793;
+    --contrast5: #e14c2a80;
+    --contrast6: #cd104c80;
+    --contrast7: #9c2c7780;
     --contrast8: #2f2519;
     --contrast9: #493f35;
     --contrast10: #fa7d09;
@@ -47,7 +47,7 @@ main{
 }
 main section{
     width: 86%;
-    margin: 15px auto;
+    margin: 25px auto;
     padding: 10px;
     background-color: var(--secondary-color);
     font-size: var(--psize);
@@ -68,7 +68,7 @@ main section{
 .recentactivity-container{
     padding: 0;
 }
-.recentactivity-title,.progresstracker-title,.resumen-title,.graficos-title,.estadistica-title{
+.recentactivity-title,.progresstracker-title,.resumen-title,.graficos-title,.estadistica-title,.usuarios-title{
     text-align: center;
     border-bottom: 1px solid var(--contrast2);
 }
@@ -180,7 +180,7 @@ main section{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-top: 10%;
+    padding-top: 2%;
 }
 .box{
     width: 100%;
@@ -336,7 +336,31 @@ main section{
 .modebar{
     display: none;
 }
+.usuarios-section table{
+    width: 100%;
+}
+.usuarios-section table tr th{
+    width: 33.3%;
+    text-align: left;
+}
+.usuarios-section table .fila-impar{
+    background-color: var(--bar-bg);
+}
 @media screen and (min-width:744px){
+    .introduction ul{
+        margin: 7%;
+        font-size: var(--h4size);
+    }
+    .title{
+        font-size: var(--h3size);
+    }
+    .introduction .gray{
+        text-align: center;
+        font-size: var(--h4size);
+    }
+    .main-title{
+        font-size: var(--h3size);
+    }
     .row-marker{
         flex-direction: row;
         width: 20%;
@@ -349,8 +373,66 @@ main section{
     .row-marker p{
         width: 50%;
     }
+    .row-marker-text{
+        font-size: var(--h4size);
+    }
+    .row-marker-dot{
+        width: 20px;
+        height: 20px;
+    }
     .row-content{
         position: relative;
+        width: 80%;
     }
-    
+    .bar .bar-text,.down-container,.box-container .box-text,.row-content,.row-marker-text{
+        font-size: var(--h4size);
+    }
+    .box-bgtext{
+        font-size: var(--h3size);
+        margin-top: 3%;
+    }
+    .box{
+        padding: 2%;
+    }
+    .box .icon{
+        height: 55px;
+        width: 55px;
+    }
+    .estadisticas-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 15px;
+        justify-content: space-around;
+    }
+    .estadistica-item{
+        width: 46%;
+        max-width: 350px;
+        height: 150px;
+        padding: 10px 3%;
+    }
+    .estadistica-item .estadistica-text{
+        font-size: 20px;
+    }
+    .estadistica-number{
+        font-size: var(--h3size);
+    }
+    .estadistica-number__small {
+        font-size: var(--psize);
+    }
+    .usuarios-section table{
+        font-size: var(--h4size);
+    }
+}
+@media screen and (min-width:1000px) {
+    .graficos-container{
+        display: flex;
+    }
+    .box-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box{
+        width: 45%;
+    }
 }
