@@ -6,6 +6,9 @@
     <title>Administracion de la pagina</title>
     <link rel="stylesheet" href="../css/estilos-generales.css">
     <link rel="stylesheet" href="../css/administracion.css">
+    <link rel="icon" type="image/png" href="../assets/Logo.png">
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
+
 </head>
 <body>
     <header>
@@ -78,12 +81,12 @@
                 <li><a href="#seguimiento-progreso">Seguimiento de progreso</a></li>
                 <li><a href="#resumen"></a>Resumen de actividades</li>
                 <li><a href="#estadisticas">Estadísticas del sitio</a></li>
-                <li><a href="#graficos">Graficos</a></li>
+                <li><a href="#graficos">Gráficos</a></li>
                 <li><a href="#tabla-usuarios">Usuarios</a></li>
             </ul>
         </section>
         <section class="recentactivity-container">
-            <h1 id="actividad-reciente" class="recentactivity-title title">Actividad reciente</h1>
+            <h2 id="actividad-reciente" class="recentactivity-title title">Actividad reciente</h2>
             <span class="row-container">
                 <span class="row">
                     <span class="row-marker">
@@ -151,7 +154,7 @@
             </span>
         </section>
         <section class="progresstracker-container">
-            <h1 id="seguimiento-progreso" class="progresstracker-title title">Seguimiento de progreso</h1>
+            <h2 id="seguimiento-progreso" class="progresstracker-title title">Seguimiento de progreso</h2>
             <span class="bar-container">
                 <span class="bar">
                     <span class="bar-text">
@@ -215,7 +218,7 @@
             </span>
         </section>
         <section class="resumen-container">
-            <h1 id="resumen" class="resumen-title title">Resumen de actividades</h1>
+            <h2 id="resumen" class="resumen-title title">Resumen de actividades</h2>
             <span class="box-container">
                 <div class="box1 box">
                     <span class="box-content">
@@ -271,6 +274,91 @@
                 </div>
             </span>
         </section>
+        <section>
+            <h2 id="estadisticas" class="estadistica-title">Estadísticas mensuales</h2>
+            <span class="estadisticas-container">
+                <span class="estadistica-item item-green">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Tasa de conversión</p>
+                        <p class="estadistica-number">12%</p>
+                        <span>
+                            <p class="estadistica-number__small down"><span class="trending"></span>2%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+                <span class="estadistica-item item-purple">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Visitas totales</p>
+                        <p class="estadistica-number">1,200</p>
+                        <span>
+                            <p class="estadistica-number__small up"><span class="trending"></span>10%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+                <span class="estadistica-item item-lightblue">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Clicks</p>
+                        <p class="estadistica-number">10,500</p>
+                        <span>
+                            <p class="estadistica-number__small down"><span class="trending"></span>9%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+                <span class="estadistica-item item-orange">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Visitas unicas</p>
+                        <p class="estadistica-number">600</p>
+                        <span>
+                            <p class="estadistica-number__small up"><span class="trending"></span>3%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+                <span class="estadistica-item item-blue">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Tasa de rebote</p>
+                        <p class="estadistica-number">20%</p>
+                        <span>
+                            <p class="estadistica-number__small up"><span class="trending"></span>6%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+                <span class="estadistica-item item-lightblue2">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Tiempo promedio de visita</p>
+                        <p class="estadistica-number">3 min</p>
+                        <span>
+                            <p class="estadistica-number__small down"><span class="trending time"></span>2%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+                <span class="estadistica-item item-purple2">
+                    <div class="estadistica-content">
+                        <p class="estadistica-text">Porcentaje dispositivos móbiles</p>
+                        <p class="estadistica-number">33%</p>
+                        <span>
+                            <p class="estadistica-number__small up"><span class="trending time"></span>2%</p>
+                        </span>
+                    </div>
+                    <span class="estadistica-icon"></span>
+                </span>
+            </span>
+        </section>
+        <section class="graficos-section">
+            <h2 id="graficos" class="graficos-title">Gráficos</h2>
+            <span class="graficos-container">
+                <div id="grafico-barras" class="grafico"></div>
+                <div id="grafico-pastel" class="grafico"></div>
+            </span>
+        </section>
+        <section class="usuarios-section">
+            <h2 id="tabla-usuarios">Usuarios</h2>
+        </section>
     </main>
     <footer>
         <section class="logo-social_media">
@@ -310,7 +398,9 @@
             </p>
         </section>
     </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
+    <script type="module" src="../js/grafico.js"></script>
 </body>
 </html>
