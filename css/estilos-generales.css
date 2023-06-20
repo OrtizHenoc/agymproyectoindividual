@@ -63,7 +63,7 @@ header nav{
     display: block;
     width: 138px;
     height: 43px;
-    margin: 10px;
+    margin: 10px auto;
 }
 .logo-container .logo-icon{
     background-image: url('../assets/Logo.png');
@@ -300,14 +300,17 @@ background-repeat: no-repeat;
     margin: 0 auto;
     margin-bottom: 20px;
     word-wrap: break-word;
-    max-width: 200px;
 }
 /*-----------------------------------------Tablet-----------------------------------------------------------*/
 @media screen and (min-width:740px){
     .list-footer{
         column-count: 2;
     }
-    
+    .logo-container{
+        width: 220px;
+        margin: 0;
+        height: 60px;
+    }
     .copy-footer{
         display: flex;
         justify-content: space-around;
@@ -392,10 +395,6 @@ background-repeat: no-repeat;
     }
     .cuenta-container{
         margin: 0 60px 0 0 ;
-    }
-    .logo-container{
-        width: 220px;
-        height: 60px;
     }
     .list-footer li{
         margin: 0 auto;

@@ -1,0 +1,84 @@
+:root{
+    --primary-color: #D9A13B;
+    --secondary-color: #0D0D0D;
+    --tertiary-color: #F2CF66;
+    --contrast1: #0085FF;
+    --contrast2: #8C8C8C;
+    --contrast3: #F2F2F2;
+    --background:#000000;
+    --cancel-butotn:#FF0000;
+    --h1size:48.8px;
+    --h2size:39.1px;
+    --h3size:31.3px;
+    --h4size:25px;
+    --psize:16px;
+    --smallsize:12.8px;
+}
+h1{
+    font-size: var(--h3size);
+    text-align: center;
+}
+.section-subtitle{
+    font-size: var(--h4size);
+}
+main{
+    margin: 2% 0;
+}
+main section{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: var(--psize);
+}
+section p{
+    padding: 0 5% 5%;
+    margin-bottom: 5%;
+    line-height: 1.6;
+    text-align: justify;
+}
+.section-mis-vis-val{
+    flex-direction: column-reverse;
+}
+.imagen{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (min-width:744px) {
+    .section-historia,.section-mis-vis-val,.section-equip-log,.section-fil{
+        flex-direction: row;
+        padding: 15px;
+    }
+    .section-prod-serv,.section-cert{
+        flex-direction: row-reverse;
+    }
+    .section-historia .imagen,.section-mis-vis-val .imagen, .section-prod-serv .imagen,.section-fil .imagen,.section-cert .imagen{
+        width: 50%;
+    }
+    .section-equip-log .imagen-equip-log{
+        width: 50%;
+        height: 100%;
+    }
+}
+@media screen and (min-width:1000px) {
+    h1{
+        font-size: var(--h2size);
+    }
+    .section-subtitle{
+        font-size: var(--h3size);
+        padding: 0 5% 5%;
+        margin: 0;
+    }
+    main section{
+        width: 86.80%;
+        font-size: var(--h4size);
+    }
+    .section-equip-log .imagen{
+        width: 37%;
+    }
+}
