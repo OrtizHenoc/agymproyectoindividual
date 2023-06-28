@@ -79,7 +79,7 @@
 .basic .name-plans{
     background-color: var(--contrast1);
 }
-.premiun .name-plans{
+.premium .name-plans{
     background: linear-gradient(90deg, #1D0537 0%, rgba(39, 0, 88, 0.947917) 0.01%, rgba(206, 0, 255, 0) 96.87%);
 }
 .plan-card--title{
@@ -126,7 +126,7 @@ main h3{
 .basic .plan-card--ca{
     border:  1px solid var(--contrast1);
 }
-.premiun .plan-card--ca{
+.premium .plan-card--ca{
     border: 1px solid #A300CA;
 }
 .phrase-container{
@@ -140,15 +140,25 @@ main h3{
     font-size: var(--h3size);
     text-align: center;
 }
+@media screen and (min-width: 744px) {
+    body{
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        height: 80%;
+    }
+}
 @media screen and (min-width:1000px) {
     .plans-container--slider{
         display: flex;
         width: 85%;
         max-width: 920px;
-        height: 80vh;
         justify-content: center;
         align-items: center;
         margin: 40px auto 50px;
+        height: 80%;
     }
     .title{
         font-size: var(--h3size);

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/detalle-seguros.css">
     <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/modal-pago.css">
     <link rel="icon" type="image/png" href="../assets/Logo.png">
     <title>Detalle</title>
 </head>
@@ -73,12 +74,12 @@
     </header>
     <main>
         <section class="plans-container--slider">
-            <article class="plans-container--card basic">
+            <!-- <article class="plans-container--card basic">
                 <p class="name-plans">Basico</p>
                 <div class="plan-info-container">
                     <h3 class="plan-card--title">Pago Mensual</h3>
                     <p class="plan-card--price">$19</p>
-                    <a href="detalleseguros.html" class="plan-card--ca">Escoger este</a>
+                    <button class="plan-card--ca buy-button">Contratar</button>
                 </div>
             </article>
             <span class="descripcion-seguro">
@@ -109,9 +110,51 @@
                         </li>
                     </ul>
                 </div>
-            </span>
+            </span> -->
         </section>
-        
+        <section class="container-modal">
+            <span class="pay-modal">
+                <div class="close">&times;</div>
+                <h4 class="modal-title">Elige una forma de pago</h4>
+                <form>
+                    <span class="pay-method-container">
+                        <span class="pay-method-item">
+                            <span class="pay-method-icon visa"></span>
+                            <input type="radio" name="metodo-pago">
+                        </span>
+                        <span class="pay-method-item">
+                            <span class="pay-method-icon masterc"></span>
+                            <input type="radio" name="metodo-pago">
+                        </span>
+                        <span class="pay-method-item">
+                            <span class="pay-method-icon paypal"></span>
+                            <input type="radio" name="metodo-pago">
+                        </span>
+                    </span>
+                    <h4 class="modal-title">Datos de pago</h4>
+                    <span class="pay-inputs">
+                        <label for="nombre">Titular de la tarjeta</label>
+                        <input type="text" id="nombre" placeholder="Nombre:">
+                        <label for="numerotarjeta">Número de la tarjeta</label>
+                        <input type="text" id="numerotarjeta" placeholder="XXXX XXXX XXXX XXXX">
+                        <span class="date-cvv">
+                            <span class="date-container">
+                                <label for="fecha">Fecha de vencimiento</label>
+                                <input type="date" id="fecha">
+                            </span>
+                            <span class="cvv-container">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="123">
+                            </span>
+                        </span>
+                        <p>Monto total</p>
+                        <p class="total">$99999999</p>
+                        <button class="pay-button">Pagar</button>
+                    </span>
+                </form>
+            </span>
+            <div class="payment-success-indicator"></div>
+        </section>
     </main>
     <footer>
         <section class="logo-social_media">
@@ -153,5 +196,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/modal-pago.js"></script>
+    <script src="../js/logica-seguros.js"></script>
 </body>
 </html>
