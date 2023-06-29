@@ -1,7 +1,8 @@
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const planSeleccionado = params.get('plan');
-const container = document.querySelector('.plans-container--slider'); 
+const container = document.querySelector('.plans-container--slider');
+
 
 fetch ('../DATA/seguros.json')
     .then(response => response.json())
@@ -59,48 +60,5 @@ function creacionDetalle(data){
         li.textContent = cobertura;
         coberturaList.appendChild(li);
     });
-    /*<span class="descripcion-seguro">
-                <div>
-                    <h4 class="title">
-                        Coberturas
-                    </h4>
-                    <ul class="cobertura-list">
-                        <li>
-                            Responsabilidad civil obligatoria: cubre los daños a terceros en caso de un accidente.
-                        </li>
-                        <li>
-                            Asistencia en carretera básica: cubre el servicio de grúa y reparaciones en caso de avería o accidente.
-                        </li>
-                        <li>
-                            Robo y hurto del vehículo: cubre el robo o hurto del vehículo asegurado.
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="title">Beneficios</h4>
-                    <ul class="beneficios-list">
-                        <li>
-                            Protección a un precio accesible
-                        </li>
-                        <li>
-                            Cumplimiento con la ley, al cubrir la responsabilidad civil obligatoria.
-                        </li>
-                    </ul>
-                </div>
-            </span>*/ 
-}
-
-switch (planSeleccionado) {
-    case basic:
-        
-        break;
-    case standard:
-        
-        break;
-    case premium:
-        
-        break;
-
-    default:
-        break;
+  
 }
