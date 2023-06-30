@@ -172,7 +172,6 @@ hr{
         padding: 30px;
     }
     .map-info-container{
-        flex-direction: row;
         column-gap: 30px;
     }
     .map, .textarea {
@@ -212,5 +211,9 @@ hr{
     }
     .map-container, .info-container{
         align-items: flex-start;
+    }
+    .main-title{
+        width: 86.11111%;
+        margin: 30px auto;
     }
 }

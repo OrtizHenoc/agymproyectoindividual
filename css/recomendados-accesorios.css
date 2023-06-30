@@ -63,6 +63,7 @@
     align-items: center;
     border-radius: 10px;
 }
+
 .icon-camera{
     width: 70%;
     height: 70%;
@@ -107,6 +108,17 @@
 .list-container li{
     margin: 0 0 15px 0;
 }
+.buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.car-icon{
+    width: 30px;
+    width: 30px;
+    background-image: url('../assets/cart-plus-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .button-buy{
     background-color: var(--primary-color);
     font-size: var(--psize);
@@ -116,7 +128,7 @@
     border-radius: 15px; 
     text-align: center;
     line-height: 25px;
-    margin: 0px auto 25px;
+    margin: 20px 0;
 }
 .gray-text{
     color: var(--contrast2);

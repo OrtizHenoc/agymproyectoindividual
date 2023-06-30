@@ -76,13 +76,16 @@
         <section class="introduction">
             <h1 class="main-title title">Panel de administración de la página</h1>
             <p class="gray subtitle">Resumen de estadistícas y gestión de la página</p>
+            <h3 class="subtitle">Indice de contenido</h3>
             <ul>
                 <li><a href="#actividad-reciente">Actividad reciente</a></li>
                 <li><a href="#seguimiento-progreso">Seguimiento de progreso</a></li>
                 <li><a href="#resumen"></a>Resumen de actividades</li>
                 <li><a href="#estadisticas">Estadísticas del sitio</a></li>
                 <li><a href="#graficos">Gráficos</a></li>
-                <li><a href="#tabla-usuarios">Usuarios</a></li>
+                <li><a href="#tabla-vendedores">Top vendedores</a></li>
+                <li><a href="#seccion-productos">Sección de Productos</a></li>
+                <li><a href="#seccion-roles">Sección de roles y usuarios </a></li>
             </ul>
         </section>
         <section class="recentactivity-container">
@@ -357,7 +360,7 @@
             </span>
         </section>
         <section class="usuarios-section">
-            <h2 id="tabla-usuarios" class="usuarios-title title">Usuarios</h2>
+            <h2 id="tabla-vendedores" class="usuarios-title title">Top Vendedores</h2>
             <table>
                 <tr class="fila-impar">
                     <th>Usuario</th>
@@ -396,6 +399,109 @@
                 </tr>
             </table>
         </section>
+        <section class="productos-section">
+            <h2 id="seccion-productos" class="usuarios-title title">Sección de Productos</h2>
+            <table>
+                <thead>
+                    <tr class="fila-impar">
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Disponibilidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fila-par">
+                        <td>Asientos de coche</td>
+                        <td>Asientos de cuero y tela</td>
+                        <td>Disponible</td>
+                        <td class="buttons-table-column">
+                            <button class="edit-button button-table">Editar</button>
+                            <button class="delete-button button-table">Ocultar</button>
+                        </td>
+                    </tr>
+                    <tr class="fila-impar">
+                        <td>GPS</td>
+                        <td>Pantalla 5.0"</td>
+                        <td>Disponible</td>
+                        <td class="buttons-table-column">
+                            <button class="edit-button button-table">Editar</button>
+                            <button class="delete-button button-table">Ocultar</button>
+                        </td>
+                    </tr>
+                    <tr class="fila-par">
+                        <td>Luces</td>
+                        <td>Luces LED para automóvil</td>
+                        <td>Disponible</td>
+                        <td class="buttons-table-column">
+                            <button class="edit-button button-table">Editar</button>
+                            <button class="delete-button button-table">Ocultar</button>
+                        </td>
+                    </tr>
+                    <tr class="fila-impar">
+                        <td>Rin</td>
+                        <td>Rines de acero</td>
+                        <td>No disponible</td>
+                        <td class="buttons-table-column">
+                            <button class="edit-button button-table">Editar</button>
+                            <button class="delete-button button-table">Ocultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <a href="./form-accesorio.html" class="button-add">Agregar Accesorio <span class="arrow-icon"></span></a>
+        </section>
+        <section class="roles-section">
+            <h2 id="seccion-roles" class="usuarios-title title">Sección de roles y usuarios</h2>
+            <table>
+                <thead>
+                  <tr class="fila-impar">
+                    <th>Usuario</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="fila-par">
+                    <td>Usuario1</td>
+                    <td>Administrador</td>
+                    <td class="buttons-table-column">
+                        <button class="edit-button button-table">Editar</button>
+                        <button class="delete-button button-table">Eliminar</button>
+                    </td>
+                  </tr>
+                  <tr class="fila-impar">
+                    <td>Usuario2</td>
+                    <td>Dev</td>
+                    <td class="buttons-table-column">
+                        <button class="edit-button button-table">Editar</button>
+                        <button class="delete-button button-table">Eliminar</button>
+                    </td>
+                  </tr>
+                  <tr class="fila-par">
+                    <td>Usuario3</td>
+                    <td>Dev</td>
+                    <td class="buttons-table-column">
+                        <button class="edit-button button-table">Editar</button>
+                        <button class="delete-button button-table">Eliminar</button>
+                    </td>
+                  </tr>
+                  <tr class="fila-impar">
+                    <td>Usuario4</td>
+                    <td>Asistente</td>
+                    <td class="buttons-table-column">
+                        <button class="edit-button button-table">Editar</button>
+                        <button class="delete-button button-table">Eliminar</button>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+            <a href="#" class="button-add">Agregar Usuario <span class="arrow-icon"></span></a>
+        </section>
+        <div class="up-button-container">
+            <span class="up-button"></span>
+        </div>
     </main>
     <footer>
         <section class="logo-social_media">
@@ -435,9 +541,9 @@
             </p>
         </section>
     </footer>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
     <script type="module" src="../js/grafico.js"></script>
+    <script src="../js/scrollbutton.js"></script>
 </body>
 </html>

@@ -58,6 +58,10 @@ main section{
 .subtitle{
     margin: 10px;
 }
+.introduction h3{
+    font-size: var(--h4size);
+    margin: 25px auto 0;
+}
 .introduction ul{
     margin: 10%;
     list-style-type: disc;
@@ -266,7 +270,27 @@ main section{
 .item-purple,.item-purple2{
     border-left: 5px solid var(--text-purple);
 }
-
+.button-add{
+    background-color: var(--contrast1);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    margin: 20px auto;
+    display: flex;
+    text-decoration: underline;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.arrow-icon{
+    background-image: url('../assets/arrow-down-solid.svg');
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+}
 .item-orange{
     border-left: 5px solid var(--text-orange);
 }
@@ -336,20 +360,42 @@ main section{
 .modebar{
     display: none;
 }
-.usuarios-section table{
+.usuarios-section table, .productos-section table, .roles-section table{
     width: 100%;
 }
 .usuarios-section table tr th{
     width: 33.3%;
     text-align: left;
 }
-.usuarios-section table .fila-impar{
+.usuarios-section table .fila-impar,.productos-section table .fila-impar, .roles-section table .fila-impar{
     background-color: var(--bar-bg);
+}
+.buttons-table-column{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+}
+.button-table{
+    width: 40%;
+    border: none;
+    color: var(--contrast3);
+    border-radius: 5px;
+}
+.edit-button{
+    background-color: var(--contrast1);
+}
+.delete-button{
+    background-color: var(--bar-red);
 }
 @media screen and (min-width:744px){
     .introduction ul{
-        margin: 7%;
+        margin: 2% 7%;
         font-size: var(--h4size);
+    }
+    .introduction h3{
+        margin: 2% 5%;
+        font-size: var(--h3size);
     }
     .title{
         font-size: var(--h3size);
@@ -419,7 +465,7 @@ main section{
     .estadistica-number__small {
         font-size: var(--psize);
     }
-    .usuarios-section table{
+    .usuarios-section table,.productos-section table, .roles-section table{
         font-size: var(--h4size);
     }
 }

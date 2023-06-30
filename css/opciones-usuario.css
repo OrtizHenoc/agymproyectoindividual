@@ -18,7 +18,9 @@
   input{
     color: var(--contrast3);
   }
-  
+  main{
+    margin-top: 20px;
+  }
 #perfil,#notificaciones, #privacidad, #contrasena, #transacciones, #busqueda, #email, #cerrar-sesion, #ayuda{
   background-color: var(--secondary-color);
   width: 80%;
@@ -140,14 +142,15 @@
     font-size: var(--h3size);
     margin-bottom: 20px;
   }
-  #transacciones .par{
-    background-color: var(--contrast2);
-  }
-  #transacciones .impar{
-    color: var(--background);
-    background-color: var(--primary-color);
-  } 
-  
+ #transacciones table{
+  width: 100%;
+  font-size: var(--psize);
+ }
+ #transacciones table .fila-impar{
+  background-color: rgb(66, 66, 66);
+ }
+
+
   #transacciones ul {
     font-size: var(--psize);
     margin-left: 20px;
@@ -231,7 +234,7 @@
     margin: 0 auto;
     border-radius: 10px;
   }
-  
+
   /* Estilos para la sección de Cerrar Sesión */
   #cerrar-sesion {
     text-align: center;

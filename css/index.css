@@ -81,6 +81,9 @@
 .container-grid p {
     margin: 10px;
 }
+.title-oferta{
+    margin-left: 20px;
+}
 
 /*
 TABLET STYLES
@@ -141,5 +144,7 @@ DESKTOP STYLES
     .sugeridos-container{
         grid-area: sugeridos;
     }
-    
+    .title-oferta{
+        margin-left: 40px;
+    }
 }
