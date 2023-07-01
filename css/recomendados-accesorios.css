@@ -112,6 +112,7 @@
     display: flex;
     justify-content: space-evenly;
 }
+
 .car-icon{
     width: 30px;
     width: 30px;
@@ -130,6 +131,26 @@
     line-height: 25px;
     margin: 20px 0;
 }
+.information-container a:last-child{
+    margin: 20px auto;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .popup-message {
+    font-size: 18px;
+  }
+  
 .gray-text{
     color: var(--contrast2);
 }

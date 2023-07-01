@@ -74,7 +74,7 @@
     </header>
     <main>
         <h4 class="title">Carro de compras</h4>
-        <div class="main-container">
+        <!-- <div class="main-container">
             <span class="element-container">
                 <p>Asiento</p>
                 <img src="../assets/asientos.png" class="img-product" alt="">
@@ -166,9 +166,14 @@
                 </span>
                 <button class="delete-button">Eliminar</button>
             </span>
+        </div> -->
+        <div class="main-container">
+            <!-- <span class="void-message">
+                <p>No has agregado ningún producto.</p>
+            </span> -->
         </div>
         <div class="total-container">
-            <p>Total: $9999999</p>
+            <p class="p-text">Total: $<span class="total-number"></span></p> 
             <button class="buy-button">Comprar</button>
         </div>
         <section class="container-modal">
@@ -206,10 +211,9 @@
                                 <input type="text" id="cvv" placeholder="123">
                             </span>
                         </span>
-                        <p>Monto total</p>
-                        <p class="total">$99999999</p>
-                        <button class="pay-button">Pagar</button>
-                    </span>
+                            
+                            <button class="pay-button">Pagar</button>
+                        </span>
                 </form>
             </span>
             <div class="payment-success-indicator"></div>
@@ -255,6 +259,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/llenarcarrito.js"></script>
     <script src="../js/modal-pago.js"></script>
 </body>
 </html>
