@@ -1,0 +1,50 @@
+[
+    {
+        "id":"a01",
+        "nombre":"Asiento",
+        "descripcion": "Asiento de cuero y tela",
+        "precio": "200",
+        "imagenes":[
+            "../assets/accesorios/asientos1.1.jpg",
+            "../assets/accesorios/asientos1.2.jpg",
+            "../assets/accesorios/asientos1.3.jpg",
+            "../assets/accesorios/asientos1.4.jpg"
+        ]
+    },
+    {
+        "id":"g01",
+        "nombre":"Gps",
+        "descripcion": "Garmin® - GPSMAP™ 276 CX 5 Off-Road GPS Navigator",
+        "precio": "300",
+        "imagenes":[
+            "../assets/accesorios/gps1.1.jpg",
+            "../assets/accesorios/gps1.2.jpg",
+            "../assets/accesorios/gps1.3.jpg",
+            "../assets/accesorios/gps1.4.jpg"
+        ]
+    },
+    {
+        "id":"l01",
+        "nombre":"Luces",
+        "descripcion": "Lumen® - E-Mark Combo Spot/Flood Beam LED Light Bar with DRL (22, 32)",
+        "precio": "200",
+        "imagenes":[
+            "../assets/accesorios/barraled1.1.jpg",
+            "../assets/accesorios/barraled1.2.jpg",
+            "../assets/accesorios/barraled1.3.jpg",
+            "../assets/accesorios/barraled1.4.jpg"
+        ]
+    },
+    {
+        "id":"r01",
+        "nombre":"Rin",
+        "descripcion": "RTX® - STAG Gold",
+        "precio": "200",
+        "imagenes":[
+            "../assets/accesorios/rin1.1jpg",
+            "../assets/accesorios/rin1.2.jpg",
+            "../assets/accesorios/rin1.3.jpg",
+            "../assets/accesorios/rin1.4.jpg"
+        ]
+    }
+]

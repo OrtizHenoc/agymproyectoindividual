@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos-generales.css">
-    <link rel="stylesheet" href="../css/vendedor.css">
-    <link rel="stylesheet" href="../css/carrusel-carros.css">
     <link rel="icon" type="image/png" href="../assets/Logo.png">
-    <title>Informacion Vendedor</title>
+    <link rel="stylesheet" href="../css/form-agregar-accesorio.css">
+    <title>Accesorios</title>
+
 </head>
 <body>
     <header>
@@ -73,75 +72,40 @@
         </div>
     </header>
     <main>
-        <span class="vendedor-container">
-            <h4 class="nombre-vendedor">Autocare</h4>
-            <p class="calificacion">Calificación Vendedor: <img src="../assets/star-solid.svg" alt="" width="20px"> 4.7/5</p>
-            
-            <div class="circle-container">
-                <span class="icon-user"></span>
-            </div>
-            <span>
-                <p class="calificar-text">Calificar</p>
-                <ul class="star-list">
-                    <li><span class="star-container fill-star"></span></li>
-                    <li><span class="star-container fill-star"></span></li>
-                    <li><span class="star-container fill-star"></span></li>
-                    <li><span class="star-container empty-star"></span></li>
-                    <li><span class="star-container empty-star"></span></li>
-                </ul>
-            </span>
-        </span>
-        <h2>Coches en venta</h2>
-        <div class="carrusel-container">
-            <div class="arrow-container">
-                <span class="arrow-right arrow"></span>
-            </div>
-            <span class="carrusel-element">
-                <img src="../assets/car1.png" class="img-car" alt="car">
-                <span class="details-container">
-                    <p>Usado</p>
-                    <p>Marca: Porshe Sedan</p>
-                    <p>Kilometraje: 2000km</p>
-                </span>
-                <a href="./detallecoche.html" class="buy-button">Comprar</a>    
-            </span>     
-            <span class="carrusel-element">
-                <img src="../assets/car2.png" alt="car" class="img-car">
-                <span class="details-container">
-                    <p>Usado</p>
-                    <p>Marca: Lamborghini</p>
-                    <p>Kilometraje: 1000km</p>
-                </span>
-                <a href="./detallecoche.html" class="buy-button">Comprar</a>
-            </span>     
-            <span class="carrusel-element">
-                <img src="../assets/car3.png" alt="car" class="img-car">
-                <span class="details-container">
-                    <p>Usado</p>
-                    <p>Marca: Chevrolet</p>
-                    <p>Kilometraje: 2500km</p>
-                </span>
-                <a href="./detallecoche.html" class="buy-button">Comprar</a>
-            </span>     
-            <span class="carrusel-element">
-                <img src="../assets/car4.png" alt="car" class="img-car">
-                <span class="details-container">
-                    <p>Usado</p>
-                    <p>Marca: Porshe 911</p>
-                    <p>Kilometraje: 3000km</p>
-                </span>
-                <a href="./detallecoche.html" class="buy-button">Comprar</a>
-            </span>     
-            <span class="carrusel-element">
-                <img src="../assets/car5.png" alt="car" class="img-car">
-                <span class="details-container">
-                    <p>Usado</p>
-                    <p>Marca: Mercedez-Benz</p>
-                    <p>Kilometraje: 2500km</p>
-                </span>
-                <a href="./detallecoche.html" class="buy-button">Comprar</a>        
-            </span>     
-        </div>
+        <h1 class="title">Agregar usuario</h1>
+        <section class="main-container">
+            <form  class="accesorio-form">
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="number" id="contraseña" name="contraseña" required>
+                
+                <select id="select-roles">
+                    <option value="">Seleccione un rol</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Full Stack</option>
+                    <option value="sysadmin">Sysadmin</option>
+                    <option value="database">Administrador de bases de datos</option>
+                    <option value="devops">DevOps</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="diseño">Diseñador(a) UI/UX</option>
+                    <option value="analista">Analista de datos</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="gestionproy">Gestor(a) de proyectos</option>
+                    <option value="seguridad">Especialista en seguridad</option>
+                    <option value="redes">Administrador de redes</option>
+                  </select>
+                  
+                
+                <button type="submit">Crear usuario</button>
+            </form>
+        </section>
     </main>
     <footer>
         <section class="logo-social_media">
@@ -181,7 +145,5 @@
             </p>
         </section>
     </footer>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="../js/menu.js"></script>
 </body>
 </html>
