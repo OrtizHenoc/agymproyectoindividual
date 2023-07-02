@@ -24,6 +24,23 @@ h1{
 main{
     margin: 2% 0;
 }
+.section-video video{
+    width: 88.88%;
+}
+.section-video{
+    padding: 5%;
+}
+.botones-video-container{
+    width: 70%;
+    display: flex;
+    height: 30px;
+    margin: 15px auto 0;
+    justify-content: space-evenly;
+}
+.botones-video{
+    width: 30px;
+    height: 30px;
+}
 main section{
     background-color: var(--secondary-color);
     display: flex;

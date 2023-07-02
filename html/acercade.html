@@ -73,6 +73,18 @@
     </header>
     <main>
         <h1>Acerca de nosotros</h1>
+        <section class="section-video">
+            <video id="video01">
+                <source src="../assets/Car Video Stock.mp4" type="video/mp4">
+                Su navegador no soporta videos.
+            </video>
+            <div class="botones-video-container">
+                <button class="botones-video" onclick="playpause()">&#9658</button>
+                <button class="botones-video" onclick="stop()">&#9726</button>
+                <button class="botones-video" onclick="skip(-10)">&lt;&lt;</button>
+                <button class="botones-video" onclick="skip(10)">&gt;&gt;</button>
+            </div>
+        </section>
         <section class="section-historia">
             <span>
                 <h2 class="section-subtitle">Nuestra historia</h2>
@@ -190,5 +202,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/reproductorvideo.js"></script>
 </body>
 </html>
