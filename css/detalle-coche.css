@@ -347,7 +347,7 @@ hr{
     width: 88.8888889%;
     height: 400px;
     margin: 0 auto;
-    background-image: url('../assets/mapbackground.png');
+    /*background-image: url('../assets/mapbackground.png');*/
 }
 
 /*-------------------------------------------------TABLET media querys-------------------------------------------------*/

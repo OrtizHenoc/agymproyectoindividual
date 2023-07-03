@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/estilos-generales.css">
     <link rel="stylesheet" href="../css/form-vender-coche.css">
     <link rel="icon" type="image/png" href="../assets/Logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 </head>
 <body>
     <header>
@@ -76,25 +79,25 @@
         <div>
             <form action="" class="form-container">
                 <label for="matricula" class="label-title">Matricula</label>
-                <input type="text" id="matricula" class="input" placeholder="Ejemplo: M 000 000" required>
+                <input type="text" id="matricula" class="input" placeholder="Ejemplo: M 000 000">
                 <label for="km" class="label-title">Kilometraje</label>
-                <input type="number" min="0" id="km" class="input" required>
+                <input type="number" min="0" id="km" class="input">
                 <label for="TipoCoche" class="label-title">Tipo de coche</label>
                 <span class="tipocoche-container">
                     <span class="tipocoche-element">
-                        <input type="radio" class="input-radio" id="estandar" name="tipo-coche"  required>
+                        <input type="radio" class="input-radio" id="estandar" name="tipo-coche" >
                         <label for="estandar" class="label-subtitle">Coche estándar</label>
                     </span>
                     <span class="tipocoche-element">
-                        <input type="radio" class="input-radio" id="furgoneta" name="tipo-coche" required>
+                        <input type="radio" class="input-radio" id="furgoneta" name="tipo-coche">
                         <label for="furgoneta" class="label-subtitle">Furgoneta</label>
                     </span>
                     <span class="tipocoche-element">
-                        <input type="radio" class="input-radio" id="industrial" name="tipo-coche" required>
+                        <input type="radio" class="input-radio" id="industrial" name="tipo-coche">
                         <label for="industrial" class="label-subtitle">Coche industrial</label>
                     </span>
                     <span class="tipocoche-element">
-                        <input type="radio" class="input-radio" id="accesorio" name="tipo-coche" required>
+                        <input type="radio" class="input-radio" id="accesorio" name="tipo-coche">
                         <label for="accesorio" class="label-subtitle">Accesorio</label>
                     </span>
                 </span>
@@ -103,54 +106,54 @@
                     <p class="img-text">Selecciona o arrastra fotos del coche</p>
                     <div class="img-button">
                         <p class="button-text">Subir fotos</p>
-                        <input type="file" class="input-file" required>
+                        <input type="file" class="input-file" id="images-input" accept="image/*">
                     </div>
                 </span>
                 <hr>
                 <div class="section-container">
                     <section class="section1">
                         <label for="marca" class="label-title">Marca</label>
-                        <select name="marca" id="marca" class="input input-select" required></select>
+                        <select name="marca" id="marca" class="input input-select"></select>
                         <label for="modelo" class="label-title">Modelo</label>
-                    <select name="modelo" id="modelo" class="input input-select" required></select>
+                    <select name="modelo" id="modelo" class="input input-select"></select>
                     <label for="combustible" class="label-title" >Combustible</label>
-                    <select name="combustible" id="combustible" class="input input-select" required></select>
+                    <select name="combustible" id="combustible" class="input input-select"></select>
                     <label for="año" class="label-title">Año</label>
-                    <select name="año" id="año" class="input input-select" required></select>
+                    <select name="año" id="año" class="input input-select"></select>
                     <label for="precio" class="label-title">Precio</label>
-                    <input type="number" step="0.01" min="0" id="precio" class="input"  required>
+                    <input type="number" step="1" min="0" id="precio" class="input" >
                     <label for="color" class="label-title">Color</label>
-                    <input type="text" id="color" class="input" required>
+                    <input type="text" id="color" class="input">
                 </section>
                 <section class="section2">
                     <p class="p-title">Tipo de cambio</p>
                     <span class="tipocambio-container">
                         <span class="tipocambio-element">
-                            <input type="radio" class="input-radio" id="Manual" name="tipo-cambio" required>
+                            <input type="radio" class="input-radio" id="manual" name="tipo-cambio">
                             <label for="Manual" class="label-subtitle">Manual</label>
                         </span>
                         <span class="tipocambio-element">
-                            <input type="radio" class="input-radio" id="automatico" name="tipo-cambio" required>
+                            <input type="radio" class="input-radio" id="automatico" name="tipo-cambio">
                             <label for="automatico" class="label-subtitle">Automatico</label>
                         </span>
                     </span>
                     <span class="map-info-container">
                         <span class="info-container">
                             <label for="textfield" class="label-title">Informacion adicional</label>
-                            <textarea name="txt" id="textfield" cols="30" class="textarea" crows="10" placeholder="Coche en buen estado, único dueño..." required></textarea>
+                            <textarea name="txt" id="textfield" cols="30" class="textarea" crows="10" placeholder="Coche en buen estado, único dueño..."></textarea>
                         </span>
                         <span class="map-container">
                             <p class="map-text p-title">Ubicación</p>
-                            <div class="map" id="map"></div>
+                            <div class="map" id="map2"></div>
                         </span>
                     </span>
                 </section>
             </div>
                 <hr>
                 <p class="label-title">Datos de contacto</p>
-                <input type="text"  placeholder="correo@ejemplo.com" class="input" required>
-                <input type="tel" placeholder="Telefono: +505 0000-0000" class="input" required>
-                <input type="tel" placeholder="WhatsApp: +505 0000-0000" class="input" required>
+                <input type="text"  placeholder="correo@ejemplo.com" class="input">
+                <input type="tel" placeholder="Telefono: +505 0000-0000" class="input">
+                <input type="tel" placeholder="WhatsApp: +505 0000-0000" class="input">
                 <button class="publish-button">Publicar coche</button>
             </form>
         </div>
@@ -195,5 +198,13 @@
     </footer>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="../js/map2.js" type="module"></script>
+     <script src="../js/validacionesform.js" type="module"></script>
+     <script src="../js/llenarselect.js" type="module"></script>
+     
+
 </body>
 </html>
