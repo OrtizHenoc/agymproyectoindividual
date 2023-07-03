@@ -5,3 +5,10 @@ Webcam.set({
     jpeg_quality:90
 })
 Webcam.attach("#camera")
+
+function takess(){
+    Webcam.snap(function(data_uri){
+        document.getElementById("circle-container").innerHTML = 
+        `<img src="${data_uri}">`;
+    });
+}
