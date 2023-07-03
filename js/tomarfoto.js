@@ -1,15 +1,17 @@
 
 
 function takess(){
-    Webcam.snap(function(data_uri){
-        var cameraDiv = document.getElementById("camera");
-        if(cameraDiv.style.display === "none"){
-            alert("Desplega la camara para tomar la foto")
-        }else{
-            document.querySelector(".circle-container").innerHTML = 
-            `<img src="${data_uri}" class="take-image">`;
-        }
-    });
+    var cameraDiv = document.getElementById("camera");
+    var cameraDisplayStyle = window.getComputedStyle(cameraDiv).display;
+    if(cameraDisplayStyle === "none"){
+        alert("Desplega la camara para tomar la foto")
+    }else{
+        Webcam.snap(function(data_uri){
+                document.querySelector(".circle-container").innerHTML = 
+                `<img src="${data_uri}" class="take-image">`;
+            
+        });
+    }
 }
 
 function toggleCameraDisplay() {
