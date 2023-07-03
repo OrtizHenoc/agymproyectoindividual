@@ -44,8 +44,8 @@
     max-height: 250px;
 } 
 .take-img{
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,6 +85,9 @@
 }
 #profile-pic{
     display: none;
+}
+.container{
+    border: none;
 }
 .camera-icon{
     width: 100%;
