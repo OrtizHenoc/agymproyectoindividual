@@ -81,14 +81,14 @@
                     <span class="icon-user"></span>
                 </div>
                 <div class="buttons-divisor">
-                    <input type="file" id="profile-pic">
-                    <label for="profile-pic" class="load-photo-buton">Cargar Foto</label>
-                    <button onclick="takess" class="button-camera">
+                    <!-- <input type="file" id="profile-pic"> -->
+                    <button onclick="takess()" for="profile-pic" class="button-camera">Tomar Foto</button>
+                    <button  onclick="toggleCameraDisplay()" class="diplay-camera">
                         <span class="camera-icon"></span>
                     </button>
                 </div>
             </span>
-            <div id="camera"></div>
+            <div id="camera" class="camera-container"></div>
         </span>
         <h2>Coches en venta</h2>
         <div class="carrusel-container">
