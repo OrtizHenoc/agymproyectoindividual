@@ -115,9 +115,10 @@
     width: 200px;
     height: 200px;
     background-color: rebeccapurple;
-    display: none;
     margin: 0 auto;
+    display: none;
 }
+
 @media screen and (min-width: 740px){
     .nombre-vendedor{
         font-size: var(--h3size);

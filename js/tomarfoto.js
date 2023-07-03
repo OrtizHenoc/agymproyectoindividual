@@ -1,10 +1,4 @@
-Webcam.set({
-    width: 200,
-    heigth: 200,
-    imgage_format:'jpeg',
-    jpeg_quality:90
-})
-Webcam.attach("#camera")
+
 
 function takess(){
     Webcam.snap(function(data_uri){
@@ -24,6 +18,13 @@ function toggleCameraDisplay() {
     var displayValue = computedStyle.getPropertyValue("display");
     if (displayValue === "none") {
       cameraDiv.style.display = "block";
+         Webcam.set({
+            width: 200,
+            heigth: 200,
+            imgage_format:'jpeg',
+            jpeg_quality:90
+        })
+        Webcam.attach("#camera")
     } else {
       cameraDiv.style.display = "none";
     }
