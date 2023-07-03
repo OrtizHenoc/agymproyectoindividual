@@ -6,7 +6,7 @@ function takess(){
         if(cameraDiv.style.display === "none"){
             alert("Desplega la camara para tomar la foto")
         }else{
-            document.getElementById("circle-container").innerHTML = 
+            document.querySelector(".circle-container").innerHTML = 
             `<img src="${data_uri}">`;
         }
     });
