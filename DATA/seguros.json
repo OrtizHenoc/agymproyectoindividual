@@ -3,31 +3,31 @@
         "id":"basic",
         "nombre":"Básico",
         "tiempo_pago": "Pago Mensual",
-        "precio": "19",
+        "precio": "59",
         "coberturas":[
-            "Responsabilidad civil obligatoria: cubre los daños a terceros en caso de un accidente.",
-            "Asistencia en carretera básica: cubre el servicio de grúa y reparaciones en caso de avería o accidente.",
-            "Robo y hurto del vehículo: cubre el robo o hurto del vehículo asegurado."
+            "Cubre daños a terceros en caso de accidentes.",
+            "Asistencia en carretera básica.",
+            "Robo y hurto del vehículo."
         ],
         "beneficios": [
             "Protección a un precio accesible",
-            "Cumplimiento con la ley, al cubrir la responsabilidad civil obligatoria."
+            "Cumplimiento con la ley"
         ]
     },
     {
         "id":"standard",
         "nombre":"Estándar",
-        "tiempo_pago": "Pago Anual",
-        "precio": "99",
-        "coberturas":["Cobertura 1","Cobertura 2","Cobertura 3"],
-        "beneficios": ["Beneficio 1","Beneficio 2","Beneficio 3"]
+        "tiempo_pago": "Pago Mensual",
+        "precio": "100",
+        "coberturas":["Camion de 2 a 6 toneladas","Daños materiales ocasionados a terceras personas U$2500"],
+        "beneficios": ["Todo los beneficios de la poliza basica","Servicio de vehículo de reemplazo: proporciona un vehículo de reemplazo mientras se repara el vehículo asegurado."]
     },
     {
         "id":"premium",
         "nombre":"Premium",
-        "tiempo_pago": "Pago Anual",
-        "precio": "299",
-        "coberturas":["Cobertura 1","Cobertura 2","Cobertura 3"],
-        "beneficios": ["Beneficio 1","Beneficio 2","Beneficio 3"]
+        "tiempo_pago": "Pago Mensual",
+        "precio": "150",
+        "coberturas":["Camion de mas de 6 toneladas","Muerte incapacidad permanente o parcial de 2 o mas personas U$5000"],
+        "beneficios": ["Todo los beneficios de la poliza estandar","Servicio de gestoría y trámites administrativos: ayuda en la realización de trámites relacionados con el vehículo, como gestión de multas, traspasos, etc."]
     }
 ]

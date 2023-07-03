@@ -59,3 +59,8 @@ mainContainer.addEventListener("click", function (event){
         }
     }
 })
+const botonPago = document.getElementById("boton-pago");
+botonPago.addEventListener("click", function(){
+    localStorage.removeItem('carrito');
+    alert("Pago realizado")
+})
