@@ -7,7 +7,7 @@ function takess(){
             alert("Desplega la camara para tomar la foto")
         }else{
             document.querySelector(".circle-container").innerHTML = 
-            `<img src="${data_uri}">`;
+            `<img src="${data_uri}" class="take-image">`;
         }
     });
 }

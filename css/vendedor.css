@@ -42,7 +42,14 @@
     justify-content: center;
     max-width: 250px;
     max-height: 250px;
-}  
+} 
+.take-img{
+    width: 60%;
+    height: 60%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .icon-user{
     width: 60%;
     height: 60%;
