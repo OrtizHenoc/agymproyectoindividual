@@ -76,10 +76,19 @@
         <span class="vendedor-container">
             <h4 class="nombre-vendedor">User name</h4>
             <p class="calificacion">Calificacion de Vendedor: <img src="../assets/star-solid.svg" alt="" width="20px"> 4.7/5</p>
-            
-            <div class="circle-container">
-                <span class="icon-user"></span>
-            </div>
+            <span class="profile-pic-container">
+                <div class="circle-container">
+                    <span class="icon-user"></span>
+                </div>
+                <div class="buttons-divisor">
+                    <input type="file" id="profile-pic">
+                    <label for="profile-pic" class="load-photo-buton">Cargar Foto</label>
+                    <button onclick="takess" class="button-camera">
+                        <span class="camera-icon"></span>
+                    </button>
+                </div>
+            </span>
+            <div id="camera"></div>
         </span>
         <h2>Coches en venta</h2>
         <div class="carrusel-container">
@@ -188,5 +197,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/tomarfoto.js"></script>
 </body>
 </html>
